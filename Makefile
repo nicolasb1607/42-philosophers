@@ -10,6 +10,8 @@ INCLUDES		= ./includes/
 
 SRCS	= ./main.c \
 		./srcs/check_args.c \
+		./srcs/launch_prgm.c \
+
 
 OBJS = ${SRCS:.c=.o}
 
@@ -23,10 +25,10 @@ MAKELIBFT :
 	make -C $(LIBFT)
 
 $(EXEC) : $(OBJS)
-	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft
+	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft -pthread
 
 .c.o:
-	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft
+	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft -pthread
 
 
 clean :
