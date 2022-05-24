@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/24 15:47:12 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/24 17:09:30 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,7 @@ void	*thread_print(void *i)
 
 void	launch_prgm(int ac, char **av)
 {
-	pthread_t t1;
-	//pthread_t t2;
-	int i;
-
-	(void)ac;
-	(void)av;
-
-	i = 1;
-	pthread_create(&t1, NULL, &thread_print, &i);
-	pthread_join(t1, NULL);
+	
+	
 	return ;
 }
