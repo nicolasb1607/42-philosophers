@@ -1,20 +1,22 @@
 CC		= gcc
 SAN		= -fsanitize=address
-CFLAGS	= -Wall -Wextra -Werror -g3
+CFLAGS	= -Wall -Wextra -Werror -MMD -g3
 EXEC	= philo
 
+OBJS_PATH =	objs/
+SRCS_PATH 	=	srcs/
 
 LIBFT 	= ./libft/
 
 INCLUDES		= ./includes/
 
-SRCS	= ./main.c \
-		./srcs/check_args.c \
-		./srcs/launch_prgm.c \
+SRCS	=	main.c			\
+			check_args.c	\
+			launch_prgm.c	\
 
 
-OBJS = ${SRCS:.c=.o}
-
+OBJS = 	$(addprefix $(OBJS_PATH),${SRCS:.c=.o})
+DEPS =	$(addprefix $(OBJS_PATH), $(SRCS:.c=.d))
 
 all : MAKELIBFT $(EXEC)
 
@@ -27,12 +29,12 @@ MAKELIBFT :
 $(EXEC) : $(OBJS)
 	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft -pthread
 
-.c.o:
+$(OBJS_PATH)%.o: $(SRCS_PATH)%.c
+	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft -pthread
 
-
 clean :
-	rm -rf $(OBJS)
+	rm -rf objs
 	make clean -C $(LIBFT)
 
 fclean : clean
@@ -40,5 +42,7 @@ fclean : clean
 	make fclean -C $(LIBFT)
 
 re : fclean all
+
+-include $(DEPS)
 
 .PHONY : all clean fclean re 
