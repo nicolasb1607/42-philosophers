@@ -6,7 +6,7 @@
 #    By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/23 16:20:24 by nburat-d          #+#    #+#              #
-#    Updated: 2022/02/25 16:50:23 by nburat-d         ###   ########.fr        #
+#    Updated: 2022/05/24 14:31:17 by nburat-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,7 +83,7 @@ $(EXEC) : $(OBJS_SRCS)
 		ar rcs $(EXEC) $(OBJS_SRCS)
 
 .c.o :
-	$(CC) $(CFLAGS) -c $< -o $@ -I $(INCLUDES)
+	$(CC) $(CFLAGS) -c $^ -o $@ -I $(INCLUDES)
 
 clean :
 	rm -f $(OBJS_SRCS)

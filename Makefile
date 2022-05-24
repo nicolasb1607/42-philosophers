@@ -7,8 +7,6 @@ EXEC	= philo
 LIBFT 	= ./libft/
 
 INCLUDES		= ./includes/
-INCLUDESLIBFT	= ./libft/
-
 
 SRCS	= ./main.c \
 		./srcs/check_args.c \
@@ -25,21 +23,19 @@ MAKELIBFT :
 	make -C $(LIBFT)
 
 $(EXEC) : $(OBJS)
-	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(INCLUDESLIBFT) -lft
+	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft
 
 .c.o:
-	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(INCLUDESLIBFT) -lft
+	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft
 
 
 clean :
 	rm -rf $(OBJS)
 	make clean -C $(LIBFT)
-	make clean -C $(PRINTF)
 
 fclean : clean
 	rm -rf $(EXEC)
 	make fclean -C $(LIBFT)
-	make fclean -C $(PRINTF)
 
 re : fclean all
 

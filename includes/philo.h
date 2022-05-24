@@ -6,14 +6,14 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 09:49:52 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/24 14:03:18 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/24 14:31:48 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHILO_H
 # define PHILO_H
 
-# include "../libft/libft.h"
+# include "libft.h"
 //# include "struct.h"
 # include "check_args.h"
 
