@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   struct.h                                           :+:      :+:    :+:   */
+/*   routine.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/25 14:31:32 by nburat-d         ###   ########.fr       */
+/*   Created: 2022/05/25 10:37:31 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/05/25 14:33:19 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STRUCT_H
-# define STRUCT_H
+#include "routine.h"
 
-#include "philo.h"
-
-typedef struct	s_philo
-{
-	int num_of_philo;
-	int	time_to_die;
-	int	time_to_eat;
-	int	time_to_sleep;
-	int	alive;
-	
-}	t_philo;
-
-typedef struct s_fork
-{
-	int	available;
-}	t_fork;
-
-#endif
+// void	*routine(void *i)
+// {
+// 	//Take the left fork
+// 	//Take the right fork
+// 	//if the philo has taken two fork
+// 	//		he can start eating
+// 	//if not he wait till he can take  two forks
+// 	//
+// 	return NULL;
+// }

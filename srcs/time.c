@@ -1,33 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   struct.h                                           :+:      :+:    :+:   */
+/*   time.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/25 14:31:32 by nburat-d         ###   ########.fr       */
+/*   Created: 2022/05/25 09:48:51 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/05/25 10:37:15 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STRUCT_H
-# define STRUCT_H
+#include "time.h"
 
-#include "philo.h"
-
-typedef struct	s_philo
-{
-	int num_of_philo;
-	int	time_to_die;
-	int	time_to_eat;
-	int	time_to_sleep;
-	int	alive;
-	
-}	t_philo;
-
-typedef struct s_fork
-{
-	int	available;
-}	t_fork;
-
-#endif
+struct timeval start;
+struct timeval end;

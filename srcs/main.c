@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 09:50:38 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/24 16:38:44 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/25 14:32:30 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	main(int ac, char **av)
 {
 	if(is_args_valid(ac, av) == 1)
-		launch_prgm(ac, av);
+		launch_prgm(av);
 	return (0);
 }

@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   struct.h                                           :+:      :+:    :+:   */
+/*   routine.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/25 14:31:32 by nburat-d         ###   ########.fr       */
+/*   Created: 2022/05/25 10:37:40 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/05/25 14:30:49 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STRUCT_H
-# define STRUCT_H
+#ifndef ROUTINE_H
+# define ROUTINE_H
 
 #include "philo.h"
 
-typedef struct	s_philo
-{
-	int num_of_philo;
-	int	time_to_die;
-	int	time_to_eat;
-	int	time_to_sleep;
-	int	alive;
-	
-}	t_philo;
+void	*routine(void *arg);
 
-typedef struct s_fork
-{
-	int	available;
-}	t_fork;
+
 
 #endif

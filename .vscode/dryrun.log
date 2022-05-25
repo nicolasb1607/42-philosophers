@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/mnt/nfs/homes/nburat-d/Documents/philosophers'
+make -C ./libft/
+ 
+make: Leaving directory '/mnt/nfs/homes/nburat-d/Documents/philosophers'
+ 

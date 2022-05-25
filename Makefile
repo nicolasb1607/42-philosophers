@@ -13,6 +13,9 @@ INCLUDES		= ./includes/
 SRCS	=	main.c			\
 			check_args.c	\
 			launch_prgm.c	\
+			routine.c		\
+			time.c			\
+			init.c			\
 
 
 OBJS = 	$(addprefix $(OBJS_PATH),${SRCS:.c=.o})
