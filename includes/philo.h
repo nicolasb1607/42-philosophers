@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 09:49:52 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/25 14:33:07 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/26 17:45:18 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 # define PHILO_H
 
 
+# include <stdio.h>
 # include <pthread.h>
 # include <sys/time.h>
 # include <time.h>
-# include "libft.h"
 # include "struct.h"
+# include "libft.h"
 # include "check_args.h"
 # include "routine.h"
-# include <stdio.h>
-
-void	launch_prgm(char **av);
+# include "init.h"
+# include "launch_prgm.h"
 
 #endif

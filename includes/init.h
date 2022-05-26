@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:10:06 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/25 13:44:01 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/26 17:51:31 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 # define INIT_H
 
 #include "philo.h"
+
+t_global *create_global(char **av);
+t_philo *create_philo(t_global *global);
+void	init_philo(t_philo *philo, int i);
 
 #endif

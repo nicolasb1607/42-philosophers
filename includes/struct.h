@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/25 14:31:32 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/26 17:50:59 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,23 @@
 
 #include "philo.h"
 
+
+typedef struct	s_global
+{
+	int 			num_of_philo;
+	int				time_to_die;
+	int				time_to_eat;
+	int				time_to_sleep;
+	struct	s_philo	**philo;
+	pthread_mutex_t	*forks;
+}	t_global;
+
 typedef struct	s_philo
 {
-	int num_of_philo;
-	int	time_to_die;
-	int	time_to_eat;
-	int	time_to_sleep;
-	int	alive;
-	
+	int			id;
+	int			is_alive;
+	struct	s_global	*global;
 }	t_philo;
 
-typedef struct s_fork
-{
-	int	available;
-}	t_fork;
 
 #endif
