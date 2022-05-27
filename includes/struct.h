@@ -6,15 +6,14 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/27 09:43:32 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/27 10:03:47 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRUCT_H
 # define STRUCT_H
 
-#include "philo.h"
-
+# include "philo.h"
 
 typedef struct	s_global
 {
@@ -29,11 +28,10 @@ typedef struct	s_global
 
 typedef struct	s_philo
 {
-	int			id;
-	int			is_alive;
+	int					id;
+	int					is_alive;
 	struct	s_global	*global;
-	pthread_mutex_t	*forks;
-
+	pthread_mutex_t		*forks;
 }	t_philo;
 
 

@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 11:29:13 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/24 16:34:53 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/27 10:02:25 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Check if there is the specific charactere into the string
 */
 int	ft_containchar(char c, char *str)
 {
-	int	i; 
+	int	i;
 
 	i = -1;
 	while (str[++i])

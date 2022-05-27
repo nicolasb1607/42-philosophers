@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:10:06 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/27 09:52:43 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/27 10:05:05 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@
 
 t_global *create_global(char **av);
 t_philo **create_philo(t_global *global);
-void	init_philo(t_philo *philo, int i);
+void	init_philo(t_philo *philo, int i, t_global *global);
 
 #endif
