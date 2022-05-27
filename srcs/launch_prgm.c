@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/26 17:51:44 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/27 09:59:11 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,25 @@ void	display_param(t_global global)
 
 }
 
+void	display_global(t_global global)
+{
+	int	i; 
+
+	i = 0;
+	while (global.philo[i])
+	{
+		printf("Mon id de philo %d\n", global.philo[i]->id);
+		printf("en vie  %d\n", global.philo[i]->is_alive);
+		i++;	
+	}
+}
+
 void	launch_prgm(char **av)
 {
 	t_global *global;
 
 	global = create_global(av);
+	display_global(*global);
 
-	
 	return ;
 }
