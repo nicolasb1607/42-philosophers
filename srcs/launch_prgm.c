@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/27 10:07:11 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/27 10:47:19 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,31 @@ void	display_global(t_global global)
 void	launch_prgm(char **av)
 {
 	t_global *global;
+	pthread_t *threads;
+	int	i; 
 
 	global = create_global(av);
 	global->philo = create_philo(global);
-	display_global(*global);
+	//display_global(*global);
+	while (i < global->num_of_philo)
+	{
+		threads = malloc(sizeof(pthread_t));
+		i++;
+	}
+	i = 0;
 
+	printf(" Impression du philo 3, ici %d\n", global->philo[2]->id);
+	while (threads[i])
+	{
+		pthread_create(&threads[i], NULL, &routine, global->philo[i]);
+		i++;
+	}
+	sleep(1);
+	i = 0;
+	while (i < global->num_of_philo)
+	{
+		pthread_join(threads[i], NULL);
+		i++;
+	}
 	return ;
 }

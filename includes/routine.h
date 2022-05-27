@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 10:37:40 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/26 16:00:42 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/27 10:22:29 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 
 #include "philo.h"
 
-void	*routine(void **arg);
+void	*routine(void *philo);
 
 #endif
