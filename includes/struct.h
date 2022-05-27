@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/27 10:03:47 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/27 14:25:17 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct	s_global
 	pthread_t		*threads;
 	struct	s_philo	**philo;
 	pthread_mutex_t	*forks;
+	pthread_mutex_t	printf;
 }	t_global;
 
 typedef struct	s_philo

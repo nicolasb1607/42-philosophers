@@ -6,19 +6,13 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/27 10:48:55 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/27 14:25:54 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-void	set_param(t_global *global, char **av)
-{
-	global->num_of_philo = ft_atoi(av[1]);
-	global->time_to_die = ft_atoi(av[2]);
-	global->time_to_eat = ft_atoi(av[3]);
-	global->time_to_sleep = ft_atoi(av[4]);
-}
+
 
 void	display_param(t_global global)
 {
@@ -57,8 +51,6 @@ void	launch_prgm(char **av)
 		i++;
 	}
 	i = 0;
-
-	printf(" Impression du philo 3, ici %d\n", global->philo[2]->id);
 	while (i < global->num_of_philo)
 	{
 		pthread_create(&threads[i], NULL, &routine, global->philo[i]);
