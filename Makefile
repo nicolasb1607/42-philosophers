@@ -11,7 +11,7 @@ SRCS	=	./main.c				\
 			./srcs/check_args.c		\
 			./srcs/launch_prgm.c	\
 			./srcs/routine.c		\
-			./srcs/time.c			\
+			./srcs/gettime.c		\
 			./srcs/init.c			\
 			./srcs/print_msg.c		\
 

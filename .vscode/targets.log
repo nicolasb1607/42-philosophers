@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 30 13:12:45 2022
+# Make data base, printed on Mon May 30 15:37:54 2022
 
 # Variables
 
@@ -43,15 +43,13 @@ SHELL = /bin/sh
 # environment
 GDM_LANG = en
 # environment
-VTE_VERSION = 6003
-# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/bin/code
+_ = /usr/share/code/code
 # makefile (from 'Makefile', line 2)
 CFLAGS = -Wall -Wextra -Werror -g3 
 # environment
-JOURNAL_STREAM = 9:458546
+JOURNAL_STREAM = 9:457143
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -59,7 +57,7 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-IM_CONFIG_PHASE = 1
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -75,9 +73,9 @@ OBJS = ${SRCS:.c=.o}
 # environment
 MANAGERPID = 49517
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-86aacd0a-366c-4114-a12a-40b90541c3db.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-628fa932-613b-4e87-b5c9-152b02b5b11e.sock
 # environment
-VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
+VSCODE_CWD = /mnt/nfs/homes/nburat-d
 # environment
 XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
 # environment
@@ -101,21 +99,19 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = dc851aa824474504bf090585a8092290
+INVOCATION_ID = 9bb7916fcffc4fdc821d4df1c0f283f7
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
 XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/nburat-d
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = 
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40568/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 50374
+GIO_LAUNCHED_DESKTOP_FILE_PID = 71414
 # automatic
 %F = $(notdir $%)
 # environment
@@ -137,8 +133,6 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /mnt/nfs/homes/nburat-d
 # environment
-VSCODE_CLI = 1
-# environment
 VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/nburat-d/.config/Code/CachedData/dfd34e8260c270da74b5c2d86d61aee4b6d56977
 # environment
 LOGNAME = nburat-d
@@ -154,8 +148,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 MAKELEVEL := 0
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -163,15 +155,15 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # makefile (from 'Makefile', line 10)
-SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/routine.c ./srcs/time.c ./srcs/init.c ./srcs/print_msg.c 
+SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/routine.c ./srcs/gettime.c ./srcs/init.c ./srcs/print_msg.c 
 # environment
-SHLVL = 1
+SHLVL = 0
 # makefile (from 'Makefile', line 6)
 LIBFT = ./libft/
 # makefile (from 'Makefile', line 1)
 CC = gcc
 # environment
-TERMINATOR_UUID = urn:uuid:966bf2bd-dbf5-437e-aa83-9fad3f7fdd2d
+IM_CONFIG_PHASE = 1
 # makefile (from 'Makefile', line 4)
 EXEC = philo
 # default
@@ -192,8 +184,6 @@ LESS = -R
 MAKE_COMMAND := make
 # environment
 OLDPWD = /mnt/nfs/homes/nburat-d
-# environment
-TERMINATOR_DBUS_PATH = /net/tenshu/Terminator2
 # default
 .VARIABLES := 
 # automatic
@@ -228,6 +218,8 @@ MAKEFILES :=
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # automatic
 ^F = $(notdir $^)
 # default
@@ -236,20 +228,18 @@ SUFFIXES :=
 CHROME_DESKTOP = code-url-handler.desktop
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
-TERMINATOR_DBUS_NAME = net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873
-# environment
 DOCKER_HOST = unix:///run/user/40568/docker.sock
 # environment
-VSCODE_PID = 50530
+VSCODE_PID = 71414
 # variable set hash-table stats:
-# Load=119/1024=12%, Rehash=0, Collisions=13/152=9%
+# Load=114/1024=11%, Rehash=0, Collisions=9/147=6%
 
 # Pattern-specific Variable Values
 
@@ -257,9 +247,9 @@ VSCODE_PID = 50530
 
 # Directories
 
-# . (device 58, inode 207782818): 11 files, no impossibilities.
+# . (device 58, inode 207782818): 13 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -277,7 +267,6 @@ MAKELIBFT:
 # @ := MAKELIBFT
 # automatic
 # % := 
- 
 # automatic
 # * := 
 # automatic
@@ -298,6 +287,7 @@ MAKELIBFT:
 all: MAKELIBFT philo
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
+ 
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
@@ -305,12 +295,18 @@ all: MAKELIBFT philo
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 
-philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/routine.o srcs/time.o srcs/init.o srcs/print_msg.o
+philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/routine.o srcs/gettime.o srcs/init.o srcs/print_msg.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 30):
 	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft -pthread
+
+# Not a target:
+srcs/gettime.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 .PHONY: all clean fclean re
 #  Implicit rule search has not been done.
@@ -332,12 +328,12 @@ srcs/routine.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-30 11:01:52.543149825
+#  Last modified 2022-05-30 15:37:19.010099472
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-srcs/time.o:
+srcs/init.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -355,12 +351,6 @@ MAKEPRINTF:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 33):
 	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft -pthread
-
-# Not a target:
-srcs/init.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
@@ -417,19 +407,19 @@ srcs/check_args.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=19/1024=2%, Rehash=0, Collisions=2/49=4%
+# Load=19/1024=2%, Rehash=0, Collisions=0/49=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 31 / storage = 290 B / avg = 9 B
-# current buf: size = 8162 B / used = 290 B / count = 31 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 293 B / avg = 9 B
+# current buf: size = 8162 B / used = 293 B / count = 31 / avg = 9 B
 
-# strcache performance: lookups = 55 / hit rate = 43%
+# strcache performance: lookups = 57 / hit rate = 45%
 # hash-table stats:
-# Load=31/8192=0%, Rehash=0, Collisions=1/55=2%
-# Finished Make data base on Mon May 30 13:12:45 2022
+# Load=31/8192=0%, Rehash=0, Collisions=1/57=2%
+# Finished Make data base on Mon May 30 15:37:54 2022
 
  

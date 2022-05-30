@@ -1,16 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   time.c                                             :+:      :+:    :+:   */
+/*   gettime.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/25 09:48:51 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/26 17:53:15 by nburat-d         ###   ########.fr       */
+/*   Created: 2022/05/30 14:52:50 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/05/30 17:28:21 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "time.h"
-/*
-struct timeval start;
-struct timeval end;*/
+#ifndef GETTIME_H
+# define GETTIME_H
+
+# include "philo.h"
+
+long	gettime_ms(void);
+
+#endif

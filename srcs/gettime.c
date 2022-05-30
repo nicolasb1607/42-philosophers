@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   philo.h                                            :+:      :+:    :+:   */
+/*   gettime.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/24 09:49:52 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 14:54:24 by nburat-d         ###   ########.fr       */
+/*   Created: 2022/05/30 17:29:05 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/05/30 17:30:34 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHILO_H
-# define PHILO_H
+#include "gettime.h"
 
-# include <stdio.h>
-# include <pthread.h>
-# include <sys/time.h>
-# include <time.h>
-# include "struct.h"
-# include "libft.h"
-# include "check_args.h"
-# include "routine.h"
-# include "init.h"
-# include "launch_prgm.h"
-# include "print_msg.h"
-# include "gettime.h"
+long	gettime_ms(void)
+{
+	struct timeval time;
 
-#endif
+	gettimeofday(&time, NULL);
+	return (time.tv_sec * 1000 + time.tv_usec / 1000);
+}

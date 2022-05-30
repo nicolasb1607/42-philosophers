@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:10:33 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 14:06:18 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 16:18:15 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ void	set_param(t_global *global, char **av)
 	global->time_to_die = ft_atoi(av[2]) * 1000;
 	global->time_to_eat = ft_atoi(av[3])* 1000;
 	global->time_to_sleep = ft_atoi(av[4])* 1000;
+	if (av[5])
+		global->number_of_meal = ft_atoi(av[5]);
+	else
+		global->number_of_meal = -1;
 }
 
 t_global	*create_global(char **av)

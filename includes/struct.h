@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 13:51:28 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 17:33:25 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,13 @@ typedef struct	s_global
 	int				time_to_die;
 	int				time_to_eat;
 	int				time_to_sleep;
+	int				number_of_meal;
 	pthread_t		*threads;
 	struct	s_philo	**philo;
 	pthread_mutex_t	*forks;
 	pthread_mutex_t	printf;
+	long	start;
+	
 }	t_global;
 
 typedef struct	s_philo

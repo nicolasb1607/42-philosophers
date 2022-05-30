@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 13:28:12 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 17:30:16 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ void	launch_prgm(char **av)
 	global = create_global(av);
 	global->philo = create_philo(global);
 
+	i = 0;
 	//display_global(*global);
 	while (i < global->num_of_philo)
 	{
@@ -52,11 +53,12 @@ void	launch_prgm(char **av)
 		i++;
 	}
 	i = 0;
+	global->start = gettime_ms();
 	while (i < global->num_of_philo)
 	{
 		pthread_create(&threads[i], NULL, &routine, global->philo[i]);
 		if (i % 2 == 0)
-			usleep(100);		
+			usleep(1000);
 		i++;
 	}
 	i = 0;
