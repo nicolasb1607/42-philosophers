@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:10:33 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 11:06:19 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 14:06:18 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	set_param(t_global *global, char **av)
 {
-	global->num_of_philo = ft_atoi(av[1]);
-	global->time_to_die = ft_atoi(av[2]);
-	global->time_to_eat = ft_atoi(av[3]);
-	global->time_to_sleep = ft_atoi(av[4]);
+	global->num_of_philo = ft_atoi(av[1]) ;
+	global->time_to_die = ft_atoi(av[2]) * 1000;
+	global->time_to_eat = ft_atoi(av[3])* 1000;
+	global->time_to_sleep = ft_atoi(av[4])* 1000;
 }
 
 t_global	*create_global(char **av)
@@ -92,11 +92,6 @@ void	init_forks(t_global *global)
 
 void	set_fork_to_philo(t_philo *philo, t_global *global)
 {
-	int	index_left_fork;
-	int	index_right_fork;
-	
-	index_left_fork = philo->id % global->num_of_philo;
-	index_right_fork = (philo->id + global->num_of_philo - 1) % global->num_of_philo;
-	philo->left_fork = global->forks[index_left_fork];
-	philo->right_fork = global->forks[index_right_fork];
+	philo->left_fork =	philo->id % global->num_of_philo;;
+	philo->right_fork = (philo->id + global->num_of_philo - 1) % global->num_of_philo;;
 }

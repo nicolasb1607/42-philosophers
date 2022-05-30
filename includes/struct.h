@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 09:45:37 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 13:51:28 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ typedef struct	s_philo
 {
 	int					id;
 	int					is_alive;
-	pthread_mutex_t		left_fork;
-	pthread_mutex_t		right_fork;
+	int					left_fork;
+	int					right_fork;
 	struct	s_global	*global;
 }	t_philo;
 
