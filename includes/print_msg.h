@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 10:53:41 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 11:04:54 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 21:22:59 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ void	print_eating(t_philo *philo);
 void	print_sleeping(t_philo *philo);
 void	print_thinking(t_philo *philo);
 void	print_drop_fork(t_philo *philo);
-
+void	print_take_left_fork(t_philo *philo);
+void	print_take_right_fork(t_philo *philo);
+void	print_drop_left_fork(t_philo *philo);
+void	print_drop_right_fork(t_philo *philo);
 
 #endif

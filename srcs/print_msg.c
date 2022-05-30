@@ -6,11 +6,25 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 10:55:01 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 21:15:40 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 21:22:00 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "print_msg.h"
+
+void	print_take_left_fork(t_philo *philo)
+{
+	pthread_mutex_lock(&philo->global->printf);
+	printf("[%ld] philo #%d has taken left fork\n", philo->time - philo->global->start ,  philo->id);
+	pthread_mutex_unlock(&philo->global->printf);
+}
+
+void	print_take_right_fork(t_philo *philo)
+{
+	pthread_mutex_lock(&philo->global->printf);
+	printf("[%ld] philo #%d has taken right fork\n", philo->time - philo->global->start ,  philo->id);
+	pthread_mutex_unlock(&philo->global->printf);
+}
 
 void	print_take_fork(t_philo *philo)
 {
@@ -44,5 +58,19 @@ void	print_drop_fork(t_philo *philo)
 {
 	pthread_mutex_lock(&philo->global->printf);
 	printf("[%ld] philo #%d has drop a fork\n", philo->time - philo->global->start, philo->id);
+	pthread_mutex_unlock(&philo->global->printf);
+}
+
+void	print_drop_left_fork(t_philo *philo)
+{
+	pthread_mutex_lock(&philo->global->printf);
+	printf("[%ld] philo #%d has drop left fork\n", philo->time - philo->global->start, philo->id);
+	pthread_mutex_unlock(&philo->global->printf);
+}
+
+void	print_drop_right_fork(t_philo *philo)
+{
+	pthread_mutex_lock(&philo->global->printf);
+	printf("[%ld] philo #%d has drop right fork\n", philo->time - philo->global->start, philo->id);
 	pthread_mutex_unlock(&philo->global->printf);
 }

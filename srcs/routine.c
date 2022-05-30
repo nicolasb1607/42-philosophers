@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 10:37:31 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 21:17:33 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 21:23:25 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ void	*routine(void *philo)
 	{
 		pthread_mutex_lock(&param.global->forks[param.left_fork]);
 		param.time = gettime_ms();
-		print_take_fork(&param);
+		print_take_left_fork(&param);
 		
 		
 		pthread_mutex_lock(&param.global->forks[param.right_fork]);
 		param.time = gettime_ms();
-		print_take_fork(&param);
+		print_take_right_fork(&param);
 		
 		param.time = gettime_ms();
 		print_eating(&param);
@@ -39,11 +39,11 @@ void	*routine(void *philo)
 
 		pthread_mutex_unlock(&param.global->forks[param.right_fork]);
 		param.time = gettime_ms();
-		print_drop_fork(&param);
+		print_drop_right_fork(&param);
 
 		pthread_mutex_unlock(&param.global->forks[param.left_fork]);
 		param.time = gettime_ms();
-		print_drop_fork(&param);
+		print_drop_left_fork(&param);
 	
 		param.time = gettime_ms();
 		print_sleeping(&param);
