@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 10:37:31 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 13:58:44 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 14:23:07 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*routine(void *philo)
 	int i;
 
 	i = 0;
-	while (i < 5)
+	while (i < 3)
 	{
 		param = *(t_philo*) philo;
 		pthread_mutex_lock(&param.global->forks[param.left_fork]);
@@ -33,11 +33,11 @@ void	*routine(void *philo)
 		//Reset the time left for the philo to die
 
 		
-		pthread_mutex_unlock(&param.global->forks[param.left_fork]);
+		pthread_mutex_unlock(&param.global->forks[param.right_fork]);
 		print_drop_fork(&param);
 
 		
-		pthread_mutex_unlock(&param.global->forks[param.right_fork]);
+		pthread_mutex_unlock(&param.global->forks[param.left_fork]);
 		print_drop_fork(&param);
 	
 		print_sleeping(&param);

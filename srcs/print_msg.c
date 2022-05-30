@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 10:55:01 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 13:35:10 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 14:12:27 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ void	print_take_fork(t_philo *philo)
 
 void	print_eating(t_philo *philo)
 {
-	pthread_mutex_lock(&philo->global->printf);
+	//pthread_mutex_lock(&philo->global->printf);
 	printf("philo #%d is eating\n", philo->id);
-	pthread_mutex_unlock(&philo->global->printf);
+	//pthread_mutex_unlock(&philo->global->printf);
 }
 
 void	print_sleeping(t_philo *philo)
