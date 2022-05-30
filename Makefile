@@ -1,6 +1,6 @@
 CC		= gcc
-CFLAGS	= -Wall -Wextra -g3 
-#-Werror
+CFLAGS	= -Wall -Wextra -Werror -g3 
+
 EXEC	= philo
 
 LIBFT 	= ./libft/
@@ -13,6 +13,7 @@ SRCS	=	./main.c				\
 			./srcs/routine.c		\
 			./srcs/time.c			\
 			./srcs/init.c			\
+			./srcs/print_msg.c		\
 
 
 OBJS = ${SRCS:.c=.o}

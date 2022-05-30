@@ -6,10 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May 27 13:14:28 2022
+# Make data base, printed on Mon May 30 11:02:11 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -49,9 +50,9 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/code
 # makefile (from 'Makefile', line 2)
-CFLAGS = -Wall -Wextra -g3 
+CFLAGS = -Wall -Wextra -Werror -g3 
 # environment
-JOURNAL_STREAM = 9:339721
+JOURNAL_STREAM = 9:116579
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -70,18 +71,18 @@ XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/nburat-d/.loca
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40568/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# makefile (from 'Makefile', line 18)
+# makefile (from 'Makefile', line 19)
 OBJS = ${SRCS:.c=.o}
 # environment
-MANAGERPID = 85616
+MANAGERPID = 19101
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-a170f3d0-0326-42fd-9505-443903843467.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-9ffa64d7-57e3-4c78-95a0-bda6d0b54e55.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40568_MCD7gX
+KRB5CCNAME = FILE:/tmp/krb5cc_40568_JQIWu4
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -91,7 +92,7 @@ GPG_AGENT_INFO = /run/user/40568/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e3r3p12.clusters.42paris.fr:@/tmp/.ICE-unix/86132,unix/e3r3p12.clusters.42paris.fr:/tmp/.ICE-unix/86132
+SESSION_MANAGER = local/e3r3p12.clusters.42paris.fr:@/tmp/.ICE-unix/19595,unix/e3r3p12.clusters.42paris.fr:/tmp/.ICE-unix/19595
 # environment
 XDG_RUNTIME_DIR = /run/user/40568
 # environment
@@ -101,7 +102,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = a22e8f53a18548e58892f1017a6a9317
+INVOCATION_ID = 5fa821a6dfa144c5b1d86d7b26792867
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -115,7 +116,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40568/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 92562
+GIO_LAUNCHED_DESKTOP_FILE_PID = 19951
 # automatic
 %F = $(notdir $%)
 # environment
@@ -127,7 +128,7 @@ PWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 86077
+SSH_AGENT_PID = 19559
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -143,7 +144,7 @@ VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/nburat-d/.config/Code/CachedData/dfd34e8
 # environment
 LOGNAME = nburat-d
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /mnt/nfs/homes/nburat-d/.oh-my-zsh
 # environment
@@ -163,7 +164,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # makefile (from 'Makefile', line 10)
-SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/routine.c ./srcs/time.c ./srcs/init.c 
+SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/routine.c ./srcs/time.c ./srcs/init.c ./srcs/print_msg.c 
 # environment
 SHLVL = 1
 # makefile (from 'Makefile', line 6)
@@ -171,7 +172,7 @@ LIBFT = ./libft/
 # makefile (from 'Makefile', line 1)
 CC = gcc
 # environment
-TERMINATOR_UUID = urn:uuid:72ffe176-43b5-450d-981b-43aaaa7a1b96
+TERMINATOR_UUID = urn:uuid:00b9845f-4f3e-4ace-acdf-febeef3fb6d7
 # makefile (from 'Makefile', line 4)
 EXEC = philo
 # default
@@ -247,7 +248,7 @@ TERMINATOR_DBUS_NAME = net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873
 # environment
 DOCKER_HOST = unix:///run/user/40568/docker.sock
 # environment
-VSCODE_PID = 93237
+VSCODE_PID = 20226
 # variable set hash-table stats:
 # Load=119/1024=12%, Rehash=0, Collisions=13/152=9%
 
@@ -257,9 +258,9 @@ VSCODE_PID = 93237
 
 # Directories
 
-# . (device 57, inode 207782818): 12 files, no impossibilities.
+# . (device 58, inode 207782818): 13 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -278,7 +279,6 @@ MAKELIBFT:
 # automatic
 # % := 
 # automatic
- 
 # * := 
 # automatic
 # + := 
@@ -289,10 +289,11 @@ MAKELIBFT:
 # automatic
 # ^ := 
 # automatic
+ 
 # ? := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
-#  recipe to execute (from 'Makefile', line 26):
+#  recipe to execute (from 'Makefile', line 27):
 	make -C $(LIBFT)
 
 all: MAKELIBFT philo
@@ -305,11 +306,11 @@ all: MAKELIBFT philo
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 
-philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/routine.o srcs/time.o srcs/init.o
+philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/routine.o srcs/time.o srcs/init.o srcs/print_msg.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 29):
+#  recipe to execute (from 'Makefile', line 30):
 	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft -pthread
 
 .PHONY: all clean fclean re
@@ -332,7 +333,7 @@ srcs/routine.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 13:13:40.812090706
+#  Last modified 2022-05-30 11:01:52.543149825
 #  File has been updated.
 #  Successfully updated.
 
@@ -346,14 +347,14 @@ MAKEPRINTF:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 23):
+#  recipe to execute (from 'Makefile', line 24):
 	make -C $(PRINTF)
 
 .c.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 32):
+#  recipe to execute (from 'Makefile', line 33):
 	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft -pthread
 
 # Not a target:
@@ -367,12 +368,18 @@ fclean: clean
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 39):
+#  recipe to execute (from 'Makefile', line 40):
 	rm -rf $(EXEC)
 	make fclean -C $(LIBFT)
 
 # Not a target:
 .DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/print_msg.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -388,7 +395,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 35):
+#  recipe to execute (from 'Makefile', line 36):
 	rm -rf $(OBJS)
 	make clean -C $(LIBFT)
 
@@ -411,19 +418,19 @@ srcs/check_args.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=18/1024=2%, Rehash=0, Collisions=2/47=4%
+# Load=19/1024=2%, Rehash=0, Collisions=2/49=4%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 30 / storage = 273 B / avg = 9 B
-# current buf: size = 8162 B / used = 273 B / count = 30 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 290 B / avg = 9 B
+# current buf: size = 8162 B / used = 290 B / count = 31 / avg = 9 B
 
-# strcache performance: lookups = 55 / hit rate = 45%
+# strcache performance: lookups = 57 / hit rate = 45%
 # hash-table stats:
-# Load=30/8192=0%, Rehash=0, Collisions=1/55=2%
-# Finished Make data base on Fri May 27 13:14:28 2022
+# Load=31/8192=0%, Rehash=0, Collisions=1/57=2%
+# Finished Make data base on Mon May 30 11:02:11 2022
 
  

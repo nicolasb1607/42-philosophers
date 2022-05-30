@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   philo.h                                            :+:      :+:    :+:   */
+/*   print_msg.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/24 09:49:52 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 10:54:33 by nburat-d         ###   ########.fr       */
+/*   Created: 2022/05/30 10:53:41 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/05/30 11:04:54 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHILO_H
-# define PHILO_H
+#ifndef PRINT_MSG_H
+# define PRINT_MSG_H
 
-# include <stdio.h>
-# include <pthread.h>
-# include <sys/time.h>
-# include <time.h>
-# include "struct.h"
-# include "libft.h"
-# include "check_args.h"
-# include "routine.h"
-# include "init.h"
-# include "launch_prgm.h"
-# include "print_msg.h"
+# include "philo.h"
+
+void	print_take_fork(t_philo *philo);
+void	print_eating(t_philo *philo);
+void	print_sleeping(t_philo *philo);
+void	print_thinking(t_philo *philo);
+void	print_drop_fork(t_philo *philo);
+
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/27 14:25:54 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 11:21:27 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void	launch_prgm(char **av)
 
 	global = create_global(av);
 	global->philo = create_philo(global);
+
 	//display_global(*global);
 	while (i < global->num_of_philo)
 	{
