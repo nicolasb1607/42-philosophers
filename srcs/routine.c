@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 10:37:31 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 21:45:01 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/05/30 21:55:40 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	check_if_dead(t_philo *philo)
 {
-	if (philo->current_time > (philo->start_to_die + philo->global->time_to_die))
+	if ((philo->current_time - philo->start_to_die) > (philo->start_to_die + philo->global->time_to_die))
 		return (1); 
 	else
 		return (0);
@@ -46,13 +46,13 @@ void	*routine(void *arg)
 			print_dead(&philo);
 		
 		philo.current_time = gettime_ms();
-		philo.start_to_die = philo.current_time;
 		print_eating(&philo);
 		usleep(philo.global->time_to_eat);
-
+		philo.current_time = gettime_ms();
 		if (check_if_dead(&philo) == 1)
 			print_dead(&philo);
-		
+		philo.start_to_die = philo.current_time;
+
 		pthread_mutex_unlock(&philo.global->forks[philo.right_fork]);
 		philo.current_time = gettime_ms();
 		print_drop_right_fork(&philo);
