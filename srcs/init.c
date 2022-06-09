@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:10:33 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/31 13:48:48 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/09 15:01:31 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,8 +72,8 @@ t_philo	**create_philo(t_global *global)
 void	init_philo(t_philo *philo, int i, t_global *global)
 {
 	philo->id = i + 1;
-	philo->is_alive = 1;
 	philo->global = global;
+	philo->meal_taken = 0;
 }
 
 

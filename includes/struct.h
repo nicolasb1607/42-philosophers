@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 21:29:09 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/09 15:01:08 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,18 +26,20 @@ typedef struct	s_global
 	struct	s_philo	**philo;
 	pthread_mutex_t	*forks;
 	pthread_mutex_t	printf;
-	long	start;
+	long			start;
+	int				stop;
+	int				all_meals_taken;
 	
 }	t_global;
 
 typedef struct	s_philo
 {
 	int					id;
-	int					is_alive;
 	int					left_fork;
 	int					right_fork;
 	long				current_time;
 	long				start_to_die;
+	int					meal_taken;
 	struct	s_global	*global;
 }	t_philo;
 

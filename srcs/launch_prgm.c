@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 21:10:28 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/09 15:12:29 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ void	display_global(t_global global)
 	while (global.philo[i])
 	{
 		printf("Mon id de philo %d\n", global.philo[i]->id);
-		printf("en vie  %d\n", global.philo[i]->is_alive);
 		i++;	
 	}
 }
@@ -54,8 +53,6 @@ void	launch_philo_threads(t_global *global)
 	while (i < global->num_of_philo)
 	{
 		pthread_create(&global->threads[i], NULL, &routine, global->philo[i]);
-		if (i % 2 == 0)
-			usleep(1000);
 		i++;
 	}
 }
@@ -72,16 +69,30 @@ void	join_philo_threads(t_global *global)
 	}
 }
 
+int	is_all_meals_taken(t_global *global)
+{
+	if(global->all_meals_taken == global->num_of_philo)
+		return (1);
+	return (0);
+}
+
 void	launch_prgm(char **av)
 {
 	t_global *global;
+	
 
 	global = create_global(av);
 	global->philo = create_philo(global);
 	malloc_threads(global);
 	global->start = gettime_ms();
 	launch_philo_threads(global);
+	while(1)
+	{
+		if (is_all_meals_taken(global) == 1 || global->stop == 1)
+			return ;
+	}
 	join_philo_threads(global);
 	
+
 	return ;
 }

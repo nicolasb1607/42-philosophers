@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 31 12:59:35 2022
+# Make data base, printed on Thu Jun  9 13:17:25 2022
 
 # Variables
 
@@ -51,7 +51,7 @@ _ = /usr/bin/code
 # makefile (from 'Makefile', line 2)
 CFLAGS = -Wall -Wextra -Werror -g3 
 # environment
-JOURNAL_STREAM = 9:163415
+JOURNAL_STREAM = 9:1677659
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -73,15 +73,15 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from 'Makefile', line 19)
 OBJS = ${SRCS:.c=.o}
 # environment
-MANAGERPID = 30185
+MANAGERPID = 398730
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-8e655d2f-be60-43d0-afd2-f3ec0ffe8df9.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-0d232651-d7e1-4830-a88e-204abdb06c7b.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session4
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40568_wvvSgc
+KRB5CCNAME = FILE:/tmp/krb5cc_40568_0JItYJ
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -91,7 +91,7 @@ GPG_AGENT_INFO = /run/user/40568/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e3r3p12.clusters.42paris.fr:@/tmp/.ICE-unix/30678,unix/e3r3p12.clusters.42paris.fr:/tmp/.ICE-unix/30678
+SESSION_MANAGER = local/e3r3p12.clusters.42paris.fr:@/tmp/.ICE-unix/399189,unix/e3r3p12.clusters.42paris.fr:/tmp/.ICE-unix/399189
 # environment
 XDG_RUNTIME_DIR = /run/user/40568
 # environment
@@ -101,7 +101,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 34d25ea8481040649acc5662e143026f
+INVOCATION_ID = df846b146182410387167e23fe4049a6
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -115,7 +115,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40568/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 31031
+GIO_LAUNCHED_DESKTOP_FILE_PID = 399572
 # automatic
 %F = $(notdir $%)
 # environment
@@ -127,7 +127,7 @@ PWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 30641
+SSH_AGENT_PID = 399141
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -139,11 +139,11 @@ HOME = /mnt/nfs/homes/nburat-d
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/nburat-d/.config/Code/CachedData/dfd34e8260c270da74b5c2d86d61aee4b6d56977
+VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/nburat-d/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
 LOGNAME = nburat-d
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 ZSH = /mnt/nfs/homes/nburat-d/.oh-my-zsh
 # environment
@@ -171,7 +171,7 @@ LIBFT = ./libft/
 # makefile (from 'Makefile', line 1)
 CC = gcc
 # environment
-TERMINATOR_UUID = urn:uuid:0dcf3b54-6ff3-4616-b7cd-33c2980f1495
+TERMINATOR_UUID = urn:uuid:f8728d5c-8024-4b28-b587-451f01f3a874
 # makefile (from 'Makefile', line 4)
 EXEC = philo
 # default
@@ -203,7 +203,7 @@ LANGUAGE = en
 # environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
-VSCODE_IPC_HOOK = /run/user/40568/vscode-2ba08e64-1.66.2-main.sock
+VSCODE_IPC_HOOK = /run/user/40568/vscode-2ba08e64-1.67.2-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -216,8 +216,6 @@ MFLAGS = -pqrR
 GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
-# environment
-NO_AT_BRIDGE = 1
 # environment
 QT_ACCESSIBILITY = 1
 # environment
@@ -249,9 +247,9 @@ TERMINATOR_DBUS_NAME = net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873
 # environment
 DOCKER_HOST = unix:///run/user/40568/docker.sock
 # environment
-VSCODE_PID = 31408
+VSCODE_PID = 399643
 # variable set hash-table stats:
-# Load=120/1024=12%, Rehash=0, Collisions=13/153=8%
+# Load=119/1024=12%, Rehash=0, Collisions=13/152=9%
 
 # Pattern-specific Variable Values
 
@@ -259,7 +257,7 @@ VSCODE_PID = 31408
 
 # Directories
 
-# . (device 58, inode 207782818): 13 files, no impossibilities.
+# . (device 56, inode 207782818): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
 
@@ -278,7 +276,6 @@ MAKELIBFT:
 # automatic
 # @ := MAKELIBFT
 # automatic
- 
 # % := 
 # automatic
 # * := 
@@ -292,6 +289,7 @@ MAKELIBFT:
 # ^ := 
 # automatic
 # ? := 
+ 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
 #  recipe to execute (from 'Makefile', line 27):
@@ -432,6 +430,6 @@ srcs/check_args.o:
 # strcache performance: lookups = 57 / hit rate = 45%
 # hash-table stats:
 # Load=31/8192=0%, Rehash=0, Collisions=1/57=2%
-# Finished Make data base on Tue May 31 12:59:35 2022
+# Finished Make data base on Thu Jun  9 13:17:25 2022
 
  
