@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 10:37:31 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/10 17:36:03 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 22:54:43 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	is_death(t_philo *philo)
 {
-	//thread_mutex_lock(philo->global->stop);
+	pthread_mutex_lock(&philo->global->mutex_stop);
 	if ((philo->current_time - philo->start_to_die) > philo->global->time_to_die || philo->global->stop == 1)
 	{
-	//	pthread_mutex_unlock(philo->global->stop);
+		pthread_mutex_unlock(&philo->global->mutex_stop);
 		return (1);
 	}
-	//pthread_mutex_unlock(philo->global->stop);
+	pthread_mutex_unlock(&philo->global->mutex_stop);
 	return (0);
 }
 
@@ -31,7 +31,7 @@ void	*routine(void *arg)
 	philo = *(t_philo*) arg;
 
 	if (philo.id % 2 == 0)
-		ft_usleep(5);
+		ft_usleep(10);
 	philo.start_to_die = gettime_ms();
 	
 	while (philo.global->number_of_meal == -1 || philo.meal_taken < philo.global->number_of_meal)
@@ -50,19 +50,19 @@ void	*routine(void *arg)
 		
 		if (philo.global->num_of_philo == 1)
 		{
-			ft_usleep(philo.global->time_to_die);
+			ft_usleep_bis(philo.global->time_to_die, &philo);
 			philo.current_time = gettime_ms();
 			pthread_mutex_unlock(&philo.global->forks[philo.left_fork]);
 			print_dead(&philo);
 			return (NULL);	
 		}
-		fprintf(stderr, "1");
+		//fprintf(stderr, "1");
 		pthread_mutex_lock(&philo.global->forks[philo.right_fork]);
-		fprintf(stderr, "2");
+		//fprintf(stderr, "2");
 		philo.current_time = gettime_ms();
 		if (is_death(&philo) == 1)
 		{
-		fprintf(stderr, "3");
+			//fprintf(stderr, "3");
 			pthread_mutex_unlock(&philo.global->forks[philo.right_fork]);
 			pthread_mutex_unlock(&philo.global->forks[philo.left_fork]);
 			print_dead(&philo);
@@ -74,9 +74,9 @@ void	*routine(void *arg)
 		print_eating(&philo);
 		//philo.current_time = gettime_ms();
 		philo.start_to_die = philo.current_time;
-		ft_usleep(philo.global->time_to_eat);
+		ft_usleep_bis(philo.global->time_to_eat, &philo);
 		philo.current_time = gettime_ms();
-		fprintf(stderr, "4");
+		//fprintf(stderr, "4");
 		if (is_death(&philo) == 1)
 		{
 			pthread_mutex_unlock(&philo.global->forks[philo.right_fork]);
@@ -98,7 +98,7 @@ void	*routine(void *arg)
 /* DORMIR ROUTINE */
 
 		print_sleeping(&philo);
-		ft_usleep(philo.global->time_to_sleep);
+		ft_usleep_bis(philo.global->time_to_sleep, &philo);
 		philo.current_time = gettime_ms();
 		if (is_death(&philo) == 1)
 		{
