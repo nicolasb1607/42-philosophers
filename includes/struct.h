@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:22:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/09 15:01:08 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 16:39:55 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,9 @@ typedef struct	s_global
 	pthread_mutex_t	*forks;
 	pthread_mutex_t	printf;
 	long			start;
+	pthread_mutex_t	mutex_stop;
 	int				stop;
+	pthread_mutex_t	mutex_meals_taken;
 	int				all_meals_taken;
 	
 }	t_global;

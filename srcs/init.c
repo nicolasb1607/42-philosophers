@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:10:33 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/09 15:01:31 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 17:12:44 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,10 @@ t_global	*create_global(char **av)
 	set_param(global, av);
 	if (pthread_mutex_init(&global->printf, NULL) != 0)
 		return NULL;
-
+	if (pthread_mutex_init(&global->mutex_stop, NULL) != 0)
+		return NULL;
+	if (pthread_mutex_init(&global->mutex_meals_taken, NULL) != 0)
+		return NULL;
 	return (global);
 }
 
@@ -96,6 +99,6 @@ void	init_forks(t_global *global)
 
 void	set_fork_to_philo(t_philo *philo, t_global *global)
 {
-	philo->left_fork =	philo->id % global->num_of_philo;;
-	philo->right_fork = (philo->id + global->num_of_philo - 1) % global->num_of_philo;;
+	philo->left_fork =	philo->id % global->num_of_philo;
+	philo->right_fork = (philo->id + global->num_of_philo - 1) % global->num_of_philo;
 }

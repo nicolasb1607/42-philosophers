@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 10:37:31 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/10 16:16:01 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 17:36:03 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,13 @@
 
 int	is_death(t_philo *philo)
 {
-	if ((philo->current_time - philo->start_to_die) > philo->global->time_to_die)
+	//thread_mutex_lock(philo->global->stop);
+	if ((philo->current_time - philo->start_to_die) > philo->global->time_to_die || philo->global->stop == 1)
+	{
+	//	pthread_mutex_unlock(philo->global->stop);
 		return (1);
+	}
+	//pthread_mutex_unlock(philo->global->stop);
 	return (0);
 }
 
@@ -47,12 +52,17 @@ void	*routine(void *arg)
 		{
 			ft_usleep(philo.global->time_to_die);
 			philo.current_time = gettime_ms();
+			pthread_mutex_unlock(&philo.global->forks[philo.left_fork]);
 			print_dead(&philo);
+			return (NULL);	
 		}
+		fprintf(stderr, "1");
 		pthread_mutex_lock(&philo.global->forks[philo.right_fork]);
+		fprintf(stderr, "2");
 		philo.current_time = gettime_ms();
 		if (is_death(&philo) == 1)
 		{
+		fprintf(stderr, "3");
 			pthread_mutex_unlock(&philo.global->forks[philo.right_fork]);
 			pthread_mutex_unlock(&philo.global->forks[philo.left_fork]);
 			print_dead(&philo);
@@ -66,6 +76,7 @@ void	*routine(void *arg)
 		philo.start_to_die = philo.current_time;
 		ft_usleep(philo.global->time_to_eat);
 		philo.current_time = gettime_ms();
+		fprintf(stderr, "4");
 		if (is_death(&philo) == 1)
 		{
 			pthread_mutex_unlock(&philo.global->forks[philo.right_fork]);
@@ -98,6 +109,8 @@ void	*routine(void *arg)
 /* PENSER ROUTINE */
 		print_thinking(&philo);
 	}
+	pthread_mutex_lock(&philo.global->mutex_meals_taken);
 	philo.global->all_meals_taken++;
+	pthread_mutex_unlock(&philo.global->mutex_meals_taken);
 	return (NULL);
 }

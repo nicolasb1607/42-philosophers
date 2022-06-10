@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/10 16:10:35 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 16:42:28 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,13 @@ void	join_philo_threads(t_global *global)
 
 int	is_all_meals_taken(t_global *global)
 {
+	pthread_mutex_lock(&global->mutex_meals_taken);
 	if(global->all_meals_taken == global->num_of_philo)
+	{	
+		pthread_mutex_unlock(&global->mutex_meals_taken);
 		return (1);
+	}
+	pthread_mutex_unlock(&global->mutex_meals_taken);
 	return (0);
 }
 
@@ -80,9 +85,15 @@ void	launch_prgm(char **av)
 	global->start = gettime_ms();
 	launch_philo_threads(global);
 	while(1)
-	{
+	{	
+		ft_usleep(5);
+		pthread_mutex_lock(&global->mutex_stop);
 		if (is_all_meals_taken(global) == 1 || global->stop == 1)
+		{
+			pthread_mutex_unlock(&global->mutex_stop);
 			break ;
+		}
+		pthread_mutex_unlock(&global->mutex_stop);
 	}
 	join_philo_threads(global);
 	return ;

@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 10:55:01 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/10 11:35:12 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 16:51:34 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,9 @@ void	print_dead(t_philo *philo)
 		if (philo->global->stop == 0)
 		{
 			printf("[%ld] philo #%d IS DEAD\n", philo->current_time - philo->global->start, philo->id);
+			pthread_mutex_lock(&philo->global->mutex_stop);
 			philo->global->stop = 1;
+			pthread_mutex_unlock(&philo->global->mutex_stop);
 		}
 		pthread_mutex_unlock(&philo->global->printf);
 }
