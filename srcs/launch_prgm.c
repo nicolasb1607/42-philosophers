@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/09 15:12:29 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 10:29:34 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,6 @@ int	is_all_meals_taken(t_global *global)
 void	launch_prgm(char **av)
 {
 	t_global *global;
-	
 
 	global = create_global(av);
 	global->philo = create_philo(global);
@@ -92,7 +91,5 @@ void	launch_prgm(char **av)
 			return ;
 	}
 	join_philo_threads(global);
-	
-
 	return ;
 }

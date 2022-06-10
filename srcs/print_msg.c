@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 10:55:01 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/09 14:56:57 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 11:14:51 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,25 @@
 void	print_take_left_fork(t_philo *philo)
 {
 	pthread_mutex_lock(&philo->global->printf);
-	printf("[%ld] philo #%d has taken left fork\n", philo->current_time - philo->global->start ,  philo->id);
+	if (philo->global->stop == 0)
+		printf("[%ld] philo #%d has taken left fork\n", philo->current_time - philo->global->start ,  philo->id);
 	pthread_mutex_unlock(&philo->global->printf);
 }
 
 void	print_take_right_fork(t_philo *philo)
 {
 	pthread_mutex_lock(&philo->global->printf);
-	printf("[%ld] philo #%d has taken right fork\n", philo->current_time - philo->global->start ,  philo->id);
+	if (philo->global->stop == 0)
+		printf("[%ld] philo #%d has taken right fork\n", philo->current_time - philo->global->start ,  philo->id);
 	pthread_mutex_unlock(&philo->global->printf);
 }
 
 void	print_take_fork(t_philo *philo)
 {
+	
 	pthread_mutex_lock(&philo->global->printf);
-	printf("[%ld] philo #%d has taken a fork\n", philo->current_time - philo->global->start ,  philo->id);
+	if (philo->global->stop == 0)
+		printf("[%ld] philo #%d has taken a fork\n", philo->current_time - philo->global->start ,  philo->id);
 	pthread_mutex_unlock(&philo->global->printf);
 }
 
@@ -84,11 +88,11 @@ void	print_drop_right_fork(t_philo *philo)
 
 void	print_dead(t_philo *philo)
 {
-	pthread_mutex_lock(&philo->global->printf);
-	if (philo->global->stop == 0)
-	{
-		printf("[%ld] philo #%d IS DEAD\n", philo->current_time - philo->global->start, philo->id);
-		philo->global->stop = 1;
-	}
-	pthread_mutex_unlock(&philo->global->printf);
+		pthread_mutex_lock(&philo->global->printf);
+		if (philo->global->stop == 0)
+		{
+			printf("[%ld] philo #%d IS DEAD\n", philo->current_time - philo->global->start, philo->id);
+			philo->global->stop = 1;
+		}
+		pthread_mutex_unlock(&philo->global->printf);
 }
