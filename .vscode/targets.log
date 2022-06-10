@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 10 09:57:26 2022
+# Make data base, printed on Fri Jun 10 15:00:22 2022
 
 # Variables
 
@@ -47,7 +47,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/code
 # makefile (from 'Makefile', line 2)
-CFLAGS = -Wall -Wextra -Werror -g3
+CFLAGS = -Wall -Wextra -Werror -g3 
 # environment
 JOURNAL_STREAM = 9:301297
 # environment
@@ -73,7 +73,7 @@ OBJS = ${SRCS:.c=.o}
 # environment
 MANAGERPID = 60261
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-c472ca3d-745d-4d05-a031-3fae648fa206.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-a672cde0-aefd-4dd0-a809-5d3ea0f76417.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # environment
@@ -120,6 +120,7 @@ GIO_LAUNCHED_DESKTOP_FILE_PID = 61102
 DISPLAY = :0
 # environment
 VSCODE_PIPE_LOGGING = true
+ 
 # environment
 PWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # default
@@ -243,7 +244,7 @@ TERMINATOR_DBUS_NAME = net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873
 # environment
 DOCKER_HOST = unix:///run/user/40568/docker.sock
 # environment
-VSCODE_PID = 61997
+VSCODE_PID = 140761
 # variable set hash-table stats:
 # Load=117/1024=11%, Rehash=0, Collisions=13/150=9%
 
@@ -282,7 +283,6 @@ MAKELIBFT:
 # automatic
 # < := 
 # automatic
- 
 # ^ := 
 # automatic
 # ? := 
@@ -334,7 +334,7 @@ srcs/routine.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-09 16:38:58.372914761
+#  Last modified 2022-06-10 15:00:03.080209995
 #  File has been updated.
 #  Successfully updated.
 
@@ -411,6 +411,7 @@ srcs/check_args.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 # files hash-table stats:
 # Load=19/1024=2%, Rehash=0, Collisions=0/49=0%
@@ -426,6 +427,6 @@ srcs/check_args.o:
 # strcache performance: lookups = 57 / hit rate = 45%
 # hash-table stats:
 # Load=31/8192=0%, Rehash=0, Collisions=1/57=2%
-# Finished Make data base on Fri Jun 10 09:57:26 2022
+# Finished Make data base on Fri Jun 10 15:00:22 2022
 
  

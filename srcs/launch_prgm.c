@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/10 10:29:34 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 16:10:35 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,7 @@ void	display_global(t_global global)
 
 void	malloc_threads(t_global *global)
 {
-	int	i;
-
-	i = 0;
-	while (i < global->num_of_philo)
-	{
-		global->threads = malloc(sizeof(pthread_t));
-		i++;
-	}
+	global->threads = malloc(sizeof(pthread_t) * global->num_of_philo);
 }
 
 void	launch_philo_threads(t_global *global)
@@ -65,8 +58,9 @@ void	join_philo_threads(t_global *global)
 	while (i < global->num_of_philo)
 	{
 		pthread_join(global->threads[i], NULL);
-		i++;
+		i++; 
 	}
+	return ;
 }
 
 int	is_all_meals_taken(t_global *global)
@@ -88,7 +82,7 @@ void	launch_prgm(char **av)
 	while(1)
 	{
 		if (is_all_meals_taken(global) == 1 || global->stop == 1)
-			return ;
+			break ;
 	}
 	join_philo_threads(global);
 	return ;

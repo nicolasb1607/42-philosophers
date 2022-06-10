@@ -6,27 +6,11 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 10:55:01 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/10 11:14:51 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/10 11:35:12 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "print_msg.h"
-
-void	print_take_left_fork(t_philo *philo)
-{
-	pthread_mutex_lock(&philo->global->printf);
-	if (philo->global->stop == 0)
-		printf("[%ld] philo #%d has taken left fork\n", philo->current_time - philo->global->start ,  philo->id);
-	pthread_mutex_unlock(&philo->global->printf);
-}
-
-void	print_take_right_fork(t_philo *philo)
-{
-	pthread_mutex_lock(&philo->global->printf);
-	if (philo->global->stop == 0)
-		printf("[%ld] philo #%d has taken right fork\n", philo->current_time - philo->global->start ,  philo->id);
-	pthread_mutex_unlock(&philo->global->printf);
-}
 
 void	print_take_fork(t_philo *philo)
 {
@@ -59,30 +43,6 @@ void	print_thinking(t_philo *philo)
 	pthread_mutex_lock(&philo->global->printf);
 	if (philo->global->stop == 0)
 		printf("[%ld] philo #%d is thinking\n", philo->current_time - philo->global->start , philo->id);
-	pthread_mutex_unlock(&philo->global->printf);
-}
-
-void	print_drop_fork(t_philo *philo)
-{
-	pthread_mutex_lock(&philo->global->printf);
-	if (philo->global->stop == 0)
-		printf("[%ld] philo #%d has drop a fork\n", philo->current_time - philo->global->start, philo->id);
-	pthread_mutex_unlock(&philo->global->printf);
-}
-
-void	print_drop_left_fork(t_philo *philo)
-{
-	pthread_mutex_lock(&philo->global->printf);
-	if (philo->global->stop == 0)
-		printf("[%ld] philo #%d has drop left fork\n", philo->current_time - philo->global->start, philo->id);
-	pthread_mutex_unlock(&philo->global->printf);
-}
-
-void	print_drop_right_fork(t_philo *philo)
-{
-	pthread_mutex_lock(&philo->global->printf);
-	if (philo->global->stop == 0)
-		printf("[%ld] philo #%d has drop right fork\n", philo->current_time - philo->global->start, philo->id);
 	pthread_mutex_unlock(&philo->global->printf);
 }
 
