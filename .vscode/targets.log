@@ -1,286 +1,255 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.3
+# GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 10 22:25:15 2022
+# Make data base, printed on Sat Jun 11 11:07:13 2022
 
 # Variables
 
-# environment
-GDK_BACKEND = x11
-# environment
-LC_ALL = C
-# environment
-GNOME_SHELL_SESSION_MODE = ubuntu
-# environment
-SSH_AGENT_LAUNCHER = gnome-keyring
-# environment
-SNAP_INSTANCE_KEY = 
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1f04c9c6-e69a-4569-8339-65b7d3f6674b.sock
-# environment
-LC_NAME = fr_FR.UTF-8
-# environment
-LC_NUMERIC = fr_FR.UTF-8
-# environment
-VSCODE_CWD = /home/nicolas/Documents/philosophers
-# environment
-LC_ADDRESS = fr_FR.UTF-8
-# default
-MAKE_COMMAND := make
-# environment
-QT_ACCESSIBILITY = 1
 # automatic
-@D = $(patsubst %/,%,$(dir $@))
-# environment
-SNAP_INSTANCE_NAME = code
-# environment
-GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# default
-.VARIABLES := 
-# environment
-PWD = /home/nicolas/Documents/philosophers
+<D = $(patsubst %/,%,$(dir $<))
 # automatic
-%D = $(patsubst %/,%,$(dir $%))
+?F = $(notdir $?)
 # environment
-LSCOLORS = Gxfxcxdxbxegedabagacad
-# environment
-XDG_DATA_DIRS = /home/nicolas/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# environment
-OLDPWD = /home/nicolas/Documents
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
-# automatic
-%F = $(notdir $%)
-# environment
-VSCODE_CODE_CACHE_PATH = /home/nicolas/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
-# makefile (from 'Makefile', line 6)
-LIBFT = ./libft/
-# environment
-LANG = C
-# environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.YM2WN1
-# default
-.LOADED := 
-# default
-.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
-# environment
-GNOME_TERMINAL_SERVICE = :1.156
-# makefile
-MAKEFLAGS = pqrR
-# makefile
-CURDIR := /home/nicolas/Documents/philosophers
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# makefile (from 'Makefile', line 10)
-SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/routine.c ./srcs/gettime.c ./srcs/init.c ./srcs/print_msg.c 
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# environment
-MFLAGS = -pqrR
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+DESKTOP_SESSION = ubuntu
 # default
 .SHELLFLAGS := -c
 # environment
-WAYLAND_DISPLAY = wayland-0
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
+XDG_SESSION_CLASS = user
 # environment
-XDG_SESSION_DESKTOP = ubuntu
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
+XDG_SESSION_TYPE = x11
 # environment
-SNAP_REEXEC = 
-# automatic
-@F = $(notdir $@)
-# environment
-ZSH = /home/nicolas/.oh-my-zsh
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 13271
-# environment
-XDG_SESSION_TYPE = wayland
+VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # makefile (from 'Makefile', line 8)
 INCLUDES = ./includes/
-# environment
-SESSION_MANAGER = local/nicolas-XPS-15-9500:@/tmp/.ICE-unix/2204,unix/nicolas-XPS-15-9500:/tmp/.ICE-unix/2204
 # automatic
-*F = $(notdir $*)
+@D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
-# automatic
-<D = $(patsubst %/,%,$(dir $<))
-# makefile (from 'Makefile', line 4)
-EXEC = philo
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# makefile (from 'Makefile', line 19)
-OBJS = ${SRCS:.c=.o}
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
-# makefile
-SHELL = /bin/sh
-# default
-MAKECMDGOALS := all
-# environment
-XMODIFIERS = @im=ibus
-# environment
-SHLVL = 1
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/87ff155a_4d94_4b5b_94a8_c53912fb4071
-# environment
-MAKELEVEL := 0
-# default
-MAKE = $(MAKE_COMMAND)
-# environment
-SNAP_COOKIE = CEZt7BCZrKMVXecjmrxbDPMiQffLKbiX-_bOEGc96lgjms7V65r5
-# environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
-# default
-MAKEFILES := 
-# environment
-LC_MONETARY = fr_FR.UTF-8
-# automatic
-^F = $(notdir $^)
-# environment
-SNAP_USER_COMMON = /home/nicolas/snap/code/common
-# environment
-LC_TIME = fr_FR.UTF-8
-# environment
-SNAP = /snap/code/97
-# environment
-SNAP_REVISION = 97
-# environment
-SNAP_REAL_HOME = /home/nicolas
-# environment
-VSCODE_LOG_NATIVE = false
-# environment
-USERNAME = nicolas
-# environment
-GNOME_SETUP_DISPLAY = :1
-# environment
-LC_TELEPHONE = fr_FR.UTF-8
-# automatic
-?F = $(notdir $?)
-# environment
-XDG_CURRENT_DESKTOP = Unity
-# environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
-# automatic
-+F = $(notdir $+)
-# environment
-LESS = -R
-# environment
-DESKTOP_SESSION = ubuntu
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
-# 'override' directive
-GNUMAKEFLAGS := 
-# environment
-LOGNAME = nicolas
-# environment
-SNAP_ARCH = amd64
-# makefile
-.DEFAULT_GOAL := all
-# environment
-SYSTEMD_EXEC_PID = 2335
-# environment
-DISPLAY = :0
-# environment
-USER = nicolas
-# environment
-GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
-# default
-MAKE_VERSION := 4.3
-# environment
-DISABLE_WAYLAND = 1
-# environment
-SNAP_DATA = /var/snap/code/97
-# environment
-SNAP_CONTEXT = CEZt7BCZrKMVXecjmrxbDPMiQffLKbiX-_bOEGc96lgjms7V65r5
-# environment
-LC_MEASUREMENT = fr_FR.UTF-8
-# environment
-PAGER = less
-# environment
-LC_PAPER = fr_FR.UTF-8
-# environment
-XDG_RUNTIME_DIR = /run/user/1000
-# makefile (from 'Makefile', line 2)
-CFLAGS = -Wall -Wextra -Werror -g3
-# environment
-COLORTERM = truecolor
-# environment
-GDK_PIXBUF_MODULE_FILE = /home/nicolas/snap/code/common/.cache/gdk-pixbuf-loaders.cache
-# environment
-XDG_SESSION_CLASS = user
-# environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# environment
-HOME = /home/nicolas
-# environment
-QT_IM_MODULE = ibus
-# environment
-ELECTRON_RUN_AS_NODE = 1
-# environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-0ed59228-1.67.2-main.sock
-# environment
-TERM = xterm-256color
-# environment
-SNAP_NAME = code
-# environment
-GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
-# default
-.RECIPEPREFIX := 
-# automatic
-<F = $(notdir $<)
-# environment
-SNAP_VERSION = c3511e6c
-# default
-SUFFIXES := 
-# environment
-VSCODE_CLI = 1
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-VTE_VERSION = 6800
-# environment
-SNAP_COMMON = /var/snap/code/common
-# default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
-# makefile (from 'Makefile', line 1)
-CC = gcc
-# environment
-SNAP_USER_DATA = /home/nicolas/snap/code/97
-# environment
-XDG_MENU_PREFIX = gnome-
+XAUTHORITY = /mnt/nfs/homes/nburat-d/.Xauthority
 # environment
 GDMSESSION = ubuntu
 # environment
-LC_IDENTIFICATION = fr_FR.UTF-8
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /mnt/nfs/homes/nburat-d/Documents/philosophers
+# makefile
+SHELL = /bin/sh
 # environment
-SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
- 
+GDM_LANG = en
+# environment
+VTE_VERSION = 6003
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/code
+# makefile (from 'Makefile', line 2)
+CFLAGS = -Wall -Wextra -Werror -g3 
+# environment
+JOURNAL_STREAM = 9:3341954923
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+IM_CONFIG_PHASE = 1
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/nburat-d/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40568/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'Makefile', line 19)
+OBJS = ${SRCS:.c=.o}
+# environment
+MANAGERPID = 609365
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-bbefa66b-e0f1-4f8c-9351-16f88abaa2b4.sock
+# environment
+VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session13
+# environment
+KRB5CCNAME = FILE:/tmp/krb5cc_40568_iCb4R3
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /mnt/nfs/homes/nburat-d/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/40568/gnupg/S.gpg-agent:0:1
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+SESSION_MANAGER = local/e3r7p21.clusters.42paris.fr:@/tmp/.ICE-unix/609870,unix/e3r7p21.clusters.42paris.fr:/tmp/.ICE-unix/609870
+# environment
+XDG_RUNTIME_DIR = /run/user/40568
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = 9458a11fb2a4494eba61b9b57a147ecf
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/nburat-d
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/40568/keyring/ssh
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 609816
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /mnt/nfs/homes/nburat-d
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/nburat-d/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LOGNAME = nburat-d
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /mnt/nfs/homes/nburat-d/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 10)
+SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/routine.c ./srcs/gettime.c ./srcs/init.c ./srcs/print_msg.c 
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 6)
+LIBFT = ./libft/
+# makefile (from 'Makefile', line 1)
+CC = gcc
+# makefile (from 'Makefile', line 4)
+EXEC = philo
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = nburat-d
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /mnt/nfs/homes/nburat-d/Documents
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/40568/vscode-2ba08e64-1.67.2-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/0e160e5e_3ead_4091_add9_afbc69fc7b29
+# automatic
+^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.134
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+DOCKER_HOST = unix:///run/user/40568/docker.sock
+# environment
+VSCODE_PID = 617707
 # variable set hash-table stats:
-# Load=134/1024=13%, Rehash=0, Collisions=17/172=10%
+# Load=119/1024=12%, Rehash=0, Collisions=12/152=8%
 
 # Pattern-specific Variable Values
 
@@ -288,7 +257,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 66309, inode 2641780): 13 files, no impossibilities.
+# . (device 58, inode 207782818): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
 
@@ -297,26 +266,6 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # No implicit rules.
 
 # Files
-
-.c.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 33):
-	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft -pthread
-
-MAKEPRINTF:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 24):
-	make -C $(PRINTF)
-
-# Not a target:
-srcs/gettime.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 MAKELIBFT:
 #  Implicit rule search has not been done.
@@ -327,63 +276,24 @@ MAKELIBFT:
 # automatic
 # @ := MAKELIBFT
 # automatic
-# * := 
+# % := 
 # automatic
-# < := 
+# * := 
 # automatic
 # + := 
 # automatic
-# % := 
+# | := 
+# automatic
+# < := 
 # automatic
 # ^ := 
 # automatic
 # ? := 
-# automatic
-# | := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
 #  recipe to execute (from 'Makefile', line 27):
 	make -C $(LIBFT)
-
-# Not a target:
-srcs/launch_prgm.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-Makefile:
-#  Implicit rule search has been done.
-#  Last modified 2022-06-10 22:21:42.089757666
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-srcs/init.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
-	rm -rf $(OBJS)
-	make clean -C $(LIBFT)
-
-re: fclean all
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-# Not a target:
-.DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 all: MAKELIBFT philo
 #  Phony target (prerequisite of .PHONY).
@@ -395,29 +305,20 @@ all: MAKELIBFT philo
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 
-fclean: clean
-#  Phony target (prerequisite of .PHONY).
+philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/routine.o srcs/gettime.o srcs/init.o srcs/print_msg.o
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 40):
-	rm -rf $(EXEC)
-	make fclean -C $(LIBFT)
+#  recipe to execute (from 'Makefile', line 30):
+	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft -pthread
 
 # Not a target:
-srcs/print_msg.o:
+srcs/gettime.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-main.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-srcs/check_args.o:
+.PHONY: all clean fclean re
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -428,20 +329,89 @@ srcs/routine.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/routine.o srcs/gettime.o srcs/init.o srcs/print_msg.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 30):
-	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft -pthread
-
 # Not a target:
 .SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-.PHONY: all clean fclean re
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-11 11:07:10.722390707
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/init.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+MAKEPRINTF:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 24):
+	make -C $(PRINTF)
+
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft -pthread
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 40):
+	rm -rf $(EXEC)
+	make fclean -C $(LIBFT)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/print_msg.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 36):
+	rm -rf $(OBJS)
+	make clean -C $(LIBFT)
+
+# Not a target:
+main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/launch_prgm.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/check_args.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -459,7 +429,7 @@ philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/routine.o srcs/gettime.o
 
 # strcache performance: lookups = 57 / hit rate = 45%
 # hash-table stats:
-# Load=31/8192=0%, Rehash=0, Collisions=0/57=0%
-# Finished Make data base on Fri Jun 10 22:25:15 2022
+# Load=31/8192=0%, Rehash=0, Collisions=1/57=2%
+# Finished Make data base on Sat Jun 11 11:07:13 2022
 
  

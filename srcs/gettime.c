@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 17:29:05 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/10 22:16:30 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/11 11:07:20 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	ft_usleep_bis(int ms, t_philo *philo)
 	start = gettime_ms();
 	end = gettime_ms();
 	
-	//pthread_mutex_lock(&philo->global->mutex_stop);
+
 	while ((end - start) <= ms)
 	{
 		philo->current_time = gettime_ms();
@@ -56,5 +56,4 @@ void	ft_usleep_bis(int ms, t_philo *philo)
 		else 
 			break;
 	}
-	//pthread_mutex_unlock(&philo->global->mutex_stop);
 }

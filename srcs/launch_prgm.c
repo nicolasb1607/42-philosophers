@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/10 21:52:13 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/11 11:15:02 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,5 +96,23 @@ void	launch_prgm(char **av)
 		pthread_mutex_unlock(&global->mutex_stop);
 	}
 	join_philo_threads(global);
+	free_all_struct(global);
 	return ;
+}
+
+
+void free_all_struct(t_global *global)
+{
+	int i; 
+
+	i = 0;
+	free(global->threads);
+	while(i < global->num_of_philo)
+	{
+		free(global->philo[i]);
+		i++;
+	}
+	free(global->philo);
+	free(global->forks);
+	free(global);
 }
