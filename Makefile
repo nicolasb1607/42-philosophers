@@ -1,5 +1,5 @@
 CC		= gcc
-CFLAGS	= -Wall -Wextra -Werror -g3  ##-fsanitize=thread
+CFLAGS	= -Wall -Wextra -Werror -g3  #-fsanitize=thread
 
 EXEC	= philo
 
@@ -10,10 +10,13 @@ INCLUDES		= ./includes/
 SRCS	=	./main.c				\
 			./srcs/check_args.c		\
 			./srcs/launch_prgm.c	\
+			./srcs/free_prgm.c		\
 			./srcs/routine.c		\
 			./srcs/gettime.c		\
-			./srcs/init.c			\
+			./srcs/init_global.c	\
+			./srcs/init_philo.c		\
 			./srcs/print_msg.c		\
+			./srcs/check_death.c	\
 
 
 OBJS = ${SRCS:.c=.o}

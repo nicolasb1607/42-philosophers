@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gettime.h                                          :+:      :+:    :+:   */
+/*   free_prgm.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/30 14:52:50 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/12 10:14:21 by nburat-d         ###   ########.fr       */
+/*   Created: 2022/06/12 10:16:52 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/06/12 10:16:57 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GETTIME_H
-# define GETTIME_H
+#include "philo.h"
 
-# include "philo.h"
+void	free_all_struct(t_global *global)
+{
+	int	i;
 
-long	gettime_ms(void);
-void	ft_usleep(int ms);
-void	ft_usleep_bis(int ms, t_philo *philo);
-
-#endif
+	i = 0;
+	free(global->threads);
+	while (i < global->num_of_philo)
+	{
+		free(global->philo[i]);
+		i++;
+	}
+	free(global->philo);
+	free(global->forks);
+	free(global);
+}

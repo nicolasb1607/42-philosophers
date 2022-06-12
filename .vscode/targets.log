@@ -5,9 +5,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Sun Jun 12 09:41:30 2022
+# Make data base, printed on Sun Jun 12 10:42:32 2022
 
 # Variables
 
@@ -69,12 +68,12 @@ XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/nburat-d/.loca
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40568/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# makefile (from 'Makefile', line 19)
+# makefile (from 'Makefile', line 22)
 OBJS = ${SRCS:.c=.o}
 # environment
 MANAGERPID = 826068
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-b735151c-bd97-456e-a1a3-09b2e70f50d2.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-f37814be-cebb-4351-8634-967925e803e5.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # environment
@@ -162,7 +161,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # makefile (from 'Makefile', line 10)
-SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/routine.c ./srcs/gettime.c ./srcs/init.c ./srcs/print_msg.c 
+SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/free_prgm.c ./srcs/routine.c ./srcs/gettime.c ./srcs/init_global.c ./srcs/init_philo.c ./srcs/print_msg.c ./srcs/check_death.c 
 # environment
 SHLVL = 1
 # makefile (from 'Makefile', line 6)
@@ -264,6 +263,12 @@ VSCODE_PID = 826977
 
 # Files
 
+# Not a target:
+srcs/free_prgm.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 MAKELIBFT:
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
@@ -279,17 +284,17 @@ MAKELIBFT:
 # automatic
 # + := 
 # automatic
+ 
 # | := 
 # automatic
 # < := 
 # automatic
 # ^ := 
- 
 # automatic
 # ? := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
-#  recipe to execute (from 'Makefile', line 27):
+#  recipe to execute (from 'Makefile', line 30):
 	make -C $(LIBFT)
 
 all: MAKELIBFT philo
@@ -302,11 +307,11 @@ all: MAKELIBFT philo
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 
-philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/routine.o srcs/gettime.o srcs/init.o srcs/print_msg.o
+philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/free_prgm.o srcs/routine.o srcs/gettime.o srcs/init_global.o srcs/init_philo.o srcs/print_msg.o srcs/check_death.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 30):
+#  recipe to execute (from 'Makefile', line 33):
 	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft -pthread
 
 # Not a target:
@@ -335,28 +340,28 @@ srcs/routine.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 09:39:32.352103793
+#  Last modified 2022-06-12 10:41:31.875337676
 #  File has been updated.
 #  Successfully updated.
-
-# Not a target:
-srcs/init.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 MAKEPRINTF:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 24):
+#  recipe to execute (from 'Makefile', line 27):
 	make -C $(PRINTF)
+
+# Not a target:
+srcs/init_philo.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 .c.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 33):
+#  recipe to execute (from 'Makefile', line 36):
 	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft -pthread
 
 fclean: clean
@@ -364,7 +369,7 @@ fclean: clean
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 40):
+#  recipe to execute (from 'Makefile', line 43):
 	rm -rf $(EXEC)
 	make fclean -C $(LIBFT)
 
@@ -391,9 +396,15 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
+#  recipe to execute (from 'Makefile', line 39):
 	rm -rf $(OBJS)
 	make clean -C $(LIBFT)
+
+# Not a target:
+srcs/check_death.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 main.o:
@@ -408,25 +419,31 @@ srcs/launch_prgm.o:
 #  File has not been updated.
 
 # Not a target:
+srcs/init_global.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 srcs/check_args.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=19/1024=2%, Rehash=0, Collisions=0/49=0%
+# Load=22/1024=2%, Rehash=0, Collisions=0/55=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 31 / storage = 293 B / avg = 9 B
-# current buf: size = 8162 B / used = 293 B / count = 31 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 34 / storage = 354 B / avg = 10 B
+# current buf: size = 8162 B / used = 354 B / count = 34 / avg = 10 B
 
-# strcache performance: lookups = 57 / hit rate = 45%
+# strcache performance: lookups = 60 / hit rate = 43%
 # hash-table stats:
-# Load=31/8192=0%, Rehash=0, Collisions=1/57=2%
-# Finished Make data base on Sun Jun 12 09:41:30 2022
+# Load=34/8192=0%, Rehash=0, Collisions=1/60=2%
+# Finished Make data base on Sun Jun 12 10:42:32 2022
 
  

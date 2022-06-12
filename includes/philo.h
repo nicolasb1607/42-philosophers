@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 09:49:52 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/30 14:54:24 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/12 10:37:33 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@
 # include "launch_prgm.h"
 # include "print_msg.h"
 # include "gettime.h"
+# include "check_death.h"
 
 #endif

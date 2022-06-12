@@ -6,32 +6,11 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 15:10:23 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/11 11:15:02 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/12 10:17:08 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
-
-void	display_param(t_global global)
-{
-	printf("num_of_global = %d\n", global.num_of_philo);
-	printf("time_to_die = %d\n", global.time_to_die);
-	printf("time_to_eat = %d\n", global.time_to_eat);
-	printf("time_to_sleep = %d\n", global.time_to_sleep);
-
-}
-
-void	display_global(t_global global)
-{
-	int	i; 
-
-	i = 0;
-	while (global.philo[i])
-	{
-		printf("Mon id de philo %d\n", global.philo[i]->id);
-		i++;	
-	}
-}
 
 void	malloc_threads(t_global *global)
 {
@@ -40,7 +19,7 @@ void	malloc_threads(t_global *global)
 
 void	launch_philo_threads(t_global *global)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < global->num_of_philo)
@@ -52,13 +31,13 @@ void	launch_philo_threads(t_global *global)
 
 void	join_philo_threads(t_global *global)
 {
-	int i; 
-	
+	int	i;
+
 	i = 0;
 	while (i < global->num_of_philo)
 	{
 		pthread_join(global->threads[i], NULL);
-		i++; 
+		i++;
 	}
 	return ;
 }
@@ -66,7 +45,7 @@ void	join_philo_threads(t_global *global)
 int	is_all_meals_taken(t_global *global)
 {
 	pthread_mutex_lock(&global->mutex_meals_taken);
-	if(global->all_meals_taken == global->num_of_philo)
+	if (global->all_meals_taken == global->num_of_philo)
 	{	
 		pthread_mutex_unlock(&global->mutex_meals_taken);
 		return (1);
@@ -77,14 +56,14 @@ int	is_all_meals_taken(t_global *global)
 
 void	launch_prgm(char **av)
 {
-	t_global *global;
+	t_global	*global;
 
 	global = create_global(av);
 	global->philo = create_philo(global);
 	malloc_threads(global);
 	global->start = gettime_ms();
 	launch_philo_threads(global);
-	while(1)
+	while (1)
 	{	
 		ft_usleep(5);
 		pthread_mutex_lock(&global->mutex_stop);
@@ -98,21 +77,4 @@ void	launch_prgm(char **av)
 	join_philo_threads(global);
 	free_all_struct(global);
 	return ;
-}
-
-
-void free_all_struct(t_global *global)
-{
-	int i; 
-
-	i = 0;
-	free(global->threads);
-	while(i < global->num_of_philo)
-	{
-		free(global->philo[i]);
-		i++;
-	}
-	free(global->philo);
-	free(global->forks);
-	free(global);
 }

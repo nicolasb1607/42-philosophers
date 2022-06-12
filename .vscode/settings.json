@@ -2,6 +2,7 @@
 	"makefile.extensionOutputFolder": "./.vscode",
 	"files.associations": {
 		"*.c": "c",
-		"philo.h": "c"
+		"philo.h": "c",
+		"routine.h": "c"
 	}
 }
