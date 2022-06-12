@@ -1,33 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstrev.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/04 14:05:49 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/02/12 20:17:07 by nburat-d         ###   ########.fr       */
+/*   Created: 2021/10/20 17:37:46 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/06/12 11:32:36 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "check_args.h"
 
-void	ft_lstrev(t_list **alst)
+int	ft_atoi(const char *nptr)
 {
-	t_list	*prev;
-	t_list	*curr;
-	t_list	*next;
+	int	num;
+	int	i;
+	int	neg;
 
-	prev = NULL;
-	curr = *alst;
-	if (curr->next == NULL)
-		return ;
-	while (curr != NULL)
+	num = 0;
+	i = 0;
+	neg = 1;
+	while (nptr[i] == 32 || (nptr[i] >= 9 && nptr[i] <= 13))
+		i++;
+	if (nptr[i] == '+' || nptr[i] == '-')
 	{
-		next = curr->next;
-		curr->next = prev;
-		prev = curr;
-		curr = next;
+		if (nptr[i] == '-')
+			neg = -1;
+		i++;
 	}
-	*alst = prev;
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
+		num = num * 10 + nptr[i] - 48;
+		i++;
+	}
+	return (num * neg);
 }

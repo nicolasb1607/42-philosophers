@@ -1,33 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/25 13:42:15 by nburat-d          #+#    #+#             */
-/*   Updated: 2021/11/24 16:40:50 by nburat-d         ###   ########.fr       */
+/*   Created: 2021/10/20 17:38:12 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/06/12 11:23:52 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "check_args.h"
 
-/* Écrit le caractère ’c’ sur le file descriptor
-donné
-
-#1. Le caractère à écrire.
-#2. Le file descriptor sur lequel écrire. */
-void	ft_putchar_fd(char c, int fd)
+int	ft_isdigit(int c)
 {
-	write(fd, &c, 1);
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }
-
-/*
-int main()
-{
-	int fd = 1; 
-	char c = 'a';
-	
-	ft_putchar_fd(c, fd);
-	return 0;
-} */

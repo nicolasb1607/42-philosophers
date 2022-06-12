@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dlstsize.c                                      :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/28 17:25:34 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/02/23 14:34:18 by nburat-d         ###   ########.fr       */
+/*   Created: 2021/10/25 13:43:45 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/06/12 11:24:05 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "check_args.h"
 
-/*Compte le nombre d’éléments de la liste.
+/* Écrit la chaine de caractères ’s’ sur le file
+descriptor donné.
 
-#1. Le début de la liste.*/
-int	ft_dlstsize(t_dlist *lst)
+#1. La chaine de caractères à écrire.
+#2. Le file descriptor sur lequel écrire */
+void	ft_putstr_fd(char *s, int fd)
 {
-	t_dlist	*current;
-	int		size;
+	int	i;
 
-	current = lst;
-	size = 0;
-	while (current != NULL)
-	{
-		size++;
-		current = current->next;
-	}
-	return (size);
+	i = -1;
+	if (!s)
+		return ;
+	while (s[++i])
+		ft_putchar_fd(s[i], fd);
 }

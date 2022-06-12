@@ -3,6 +3,10 @@
 	"files.associations": {
 		"*.c": "c",
 		"philo.h": "c",
-		"routine.h": "c"
+		"routine.h": "c",
+		"check_args.h": "c",
+		"gettime.h": "c",
+		"stdio.h": "c",
+		"time.h": "c"
 	}
 }

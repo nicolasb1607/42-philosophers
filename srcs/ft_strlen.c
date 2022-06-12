@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 11:02:26 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/02/10 11:06:27 by nburat-d         ###   ########.fr       */
+/*   Created: 2021/10/20 17:38:57 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/06/12 11:35:35 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "check_args.h"
 
-int	ft_strcmp(char *s1, char *s2)
+size_t	ft_strlen(const char *s)
 {
-	int	i;
+	int	len;
 
-	i = 0;
-	while (s1[i] && s2[i])
-	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-		i++;
-	}
-	return (0);
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
 }

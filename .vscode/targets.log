@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 12 10:42:32 2022
+# Make data base, printed on Sun Jun 12 11:39:31 2022
 
 # Variables
 
@@ -47,7 +47,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/code
 # makefile (from 'Makefile', line 2)
-CFLAGS = -Wall -Wextra -Werror -g3  
+CFLAGS = -Wall -Wextra -Werror 
 # environment
 JOURNAL_STREAM = 9:3373558
 # environment
@@ -68,12 +68,12 @@ XDG_DATA_DIRS = /usr/share/gnome:/usr/share/ubuntu:/mnt/nfs/homes/nburat-d/.loca
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/40568/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# makefile (from 'Makefile', line 22)
+# makefile (from 'Makefile', line 30)
 OBJS = ${SRCS:.c=.o}
 # environment
 MANAGERPID = 826068
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-f37814be-cebb-4351-8634-967925e803e5.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-01ea3ddd-033b-4bd5-8e0a-322a19d2222e.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # environment
@@ -161,7 +161,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # makefile (from 'Makefile', line 10)
-SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/free_prgm.c ./srcs/routine.c ./srcs/gettime.c ./srcs/init_global.c ./srcs/init_philo.c ./srcs/print_msg.c ./srcs/check_death.c 
+SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/free_prgm.c ./srcs/routine.c ./srcs/gettime.c ./srcs/init_global.c ./srcs/init_philo.c ./srcs/print_msg.c ./srcs/check_death.c ./srcs/ft_is_int.c ./srcs/ft_isdigit.c ./srcs/ft_putstr_fd.c ./srcs/ft_atoi.c ./srcs/ft_strlen.c ./srcs/ft_memcpy.c ./srcs/ft_strcmp.c ./srcs/ft_putchar_fd.c 
 # environment
 SHLVL = 1
 # makefile (from 'Makefile', line 6)
@@ -243,9 +243,9 @@ TERMINATOR_DBUS_NAME = net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873
 # environment
 DOCKER_HOST = unix:///run/user/40568/docker.sock
 # environment
-VSCODE_PID = 826977
+VSCODE_PID = 876504
 # variable set hash-table stats:
-# Load=117/1024=11%, Rehash=0, Collisions=13/150=9%
+# Load=117/1024=11%, Rehash=0, Collisions=13/146=9%
 
 # Pattern-specific Variable Values
 
@@ -253,9 +253,9 @@ VSCODE_PID = 826977
 
 # Directories
 
-# . (device 60, inode 207782818): 13 files, no impossibilities.
+# . (device 60, inode 207782818): 12 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -265,60 +265,48 @@ VSCODE_PID = 826977
 
 # Not a target:
 srcs/free_prgm.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-MAKELIBFT:
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.222269998
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := MAKELIBFT
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := 
-# automatic
- 
-# | := 
-# automatic
-# < := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
-#  recipe to execute (from 'Makefile', line 30):
-	make -C $(LIBFT)
+#  Successfully updated.
 
-all: MAKELIBFT philo
+all: philo
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  Successfully updated.
+ 
 
-philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/free_prgm.o srcs/routine.o srcs/gettime.o srcs/init_global.o srcs/init_philo.o srcs/print_msg.o srcs/check_death.o
+# Not a target:
+srcs/ft_memcpy.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.650269922
+#  File has been updated.
+#  Successfully updated.
+
+philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/free_prgm.o srcs/routine.o srcs/gettime.o srcs/init_global.o srcs/init_philo.o srcs/print_msg.o srcs/check_death.o srcs/ft_is_int.o srcs/ft_isdigit.o srcs/ft_putstr_fd.o srcs/ft_atoi.o srcs/ft_strlen.o srcs/ft_memcpy.o srcs/ft_strcmp.o srcs/ft_putchar_fd.o
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 33):
-	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft -pthread
+#  Last modified 2022-06-12 11:39:19.770269901
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 38):
+	$(CC) $(CFLAGS) $^ -o $(EXEC) -I $(INCLUDES) -pthread
 
 # Not a target:
 srcs/gettime.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.298269984
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_strlen.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.622269927
+#  File has been updated.
+#  Successfully updated.
 
 .PHONY: all clean fclean re
 #  Implicit rule search has not been done.
@@ -326,21 +314,30 @@ srcs/gettime.o:
 #  File has not been updated.
 
 # Not a target:
-srcs/routine.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+srcs/ft_isdigit.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.518269945
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+srcs/routine.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.262269991
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 10:41:31.875337676
+#  Last modified 2022-06-12 11:38:46.886277583
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_is_int.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.482269952
 #  File has been updated.
 #  Successfully updated.
 
@@ -348,30 +345,31 @@ MAKEPRINTF:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 27):
+#  recipe to execute (from 'Makefile', line 35):
 	make -C $(PRINTF)
 
 # Not a target:
 srcs/init_philo.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.370269971
+#  File has been updated.
+#  Successfully updated.
 
 .c.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
-	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft -pthread
+#  recipe to execute (from 'Makefile', line 41):
+	$(CC) $(CFLAGS) -c $^ -o $@ -I $(INCLUDES) -pthread
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 43):
+#  recipe to execute (from 'Makefile', line 47):
 	rm -rf $(EXEC)
-	make fclean -C $(LIBFT)
+	
 
 # Not a target:
 .DEFAULT:
@@ -381,9 +379,10 @@ fclean: clean
 
 # Not a target:
 srcs/print_msg.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.406269965
+#  File has been updated.
+#  Successfully updated.
 
 re: fclean all
 #  Phony target (prerequisite of .PHONY).
@@ -396,54 +395,87 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 39):
+#  recipe to execute (from 'Makefile', line 44):
 	rm -rf $(OBJS)
-	make clean -C $(LIBFT)
+	
 
 # Not a target:
 srcs/check_death.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.442269959
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_strcmp.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.686269915
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 main.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.110270018
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 srcs/launch_prgm.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.186270004
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_putstr_fd.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.554269939
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 srcs/init_global.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.334269978
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_putchar_fd.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.71826991
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+srcs/ft_atoi.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.586269933
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 srcs/check_args.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 11:39:19.15427001
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=22/1024=2%, Rehash=0, Collisions=0/55=0%
+# Load=29/1024=3%, Rehash=0, Collisions=0/67=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 34 / storage = 354 B / avg = 10 B
-# current buf: size = 8162 B / used = 354 B / count = 34 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 40 / storage = 480 B / avg = 12 B
+# current buf: size = 8162 B / used = 480 B / count = 40 / avg = 12 B
 
-# strcache performance: lookups = 60 / hit rate = 43%
+# strcache performance: lookups = 63 / hit rate = 36%
 # hash-table stats:
-# Load=34/8192=0%, Rehash=0, Collisions=1/60=2%
-# Finished Make data base on Sun Jun 12 10:42:32 2022
+# Load=40/8192=0%, Rehash=0, Collisions=1/63=2%
+# Finished Make data base on Sun Jun 12 11:39:31 2022
 
  

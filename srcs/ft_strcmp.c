@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_containchar.c                                   :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/25 11:29:13 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/05/27 10:02:25 by nburat-d         ###   ########.fr       */
+/*   Created: 2022/02/10 11:02:26 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/06/12 11:35:31 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "check_args.h"
 
-/*
-Check if there is the specific charactere into the string
-
-1. The charactere to look for
-2. The string to look into.
-*/
-int	ft_containchar(char c, char *str)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
 
-	i = -1;
-	while (str[++i])
-		if (str[i] == c)
-			return (1);
+	i = 0;
+	while (s1[i] && s2[i])
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		i++;
+	}
 	return (0);
 }

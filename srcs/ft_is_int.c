@@ -6,11 +6,11 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 18:58:42 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/02/15 15:11:49 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/12 11:22:33 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./libft.h"
+#include "check_args.h"
 
 void	del_zero(char *str, int i)
 {

@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/28 17:27:52 by nburat-d          #+#    #+#             */
-/*   Updated: 2021/12/01 08:42:58 by nburat-d         ###   ########.fr       */
+/*   Created: 2021/10/20 17:38:28 by nburat-d          #+#    #+#             */
+/*   Updated: 2022/06/12 11:35:39 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "check_args.h"
 
-/*Renvoie le dernier élément de la liste.
-
-#1. Le début de la liste.*/
-t_list	*ft_lstlast(t_list *lst)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	t_list	*current;
+	char	*ptrdest;
+	char	*ptrsrc;
+	int		i;
 
-	current = lst;
-	if (current == NULL)
+	if (!dest && !src)
 		return (NULL);
-	while (current->next != NULL)
-		current = current->next;
-	return (current);
+	ptrdest = (char *)dest;
+	ptrsrc = (char *)src;
+	i = 0;
+	while (n-- > 0)
+	{
+		ptrdest[i] = ptrsrc[i];
+		i++;
+	}
+	return (dest);
 }

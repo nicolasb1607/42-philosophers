@@ -1,5 +1,5 @@
 CC		= gcc
-CFLAGS	= -Wall -Wextra -Werror -g3  #-fsanitize=thread
+CFLAGS	= -Wall -Wextra -Werror #-fsanitize=thread
 
 EXEC	= philo
 
@@ -17,31 +17,35 @@ SRCS	=	./main.c				\
 			./srcs/init_philo.c		\
 			./srcs/print_msg.c		\
 			./srcs/check_death.c	\
+			./srcs/ft_is_int.c		\
+			./srcs/ft_isdigit.c	\
+			./srcs/ft_putstr_fd.c	\
+			./srcs/ft_atoi.c		\
+			./srcs/ft_strlen.c		\
+			./srcs/ft_memcpy.c		\
+			./srcs/ft_strcmp.c		\
+			./srcs/ft_putchar_fd.c	\
 
 
 OBJS = ${SRCS:.c=.o}
 
-all : MAKELIBFT $(EXEC)
+all : $(EXEC) 
 
 MAKEPRINTF : 
 	make -C $(PRINTF)
 
-MAKELIBFT : 
-	make -C $(LIBFT)
-
 $(EXEC) : $(OBJS)
-	$(CC) $(CFLAGS) -L $(LIBFT) $^ -o $(EXEC) -I $(INCLUDES) -I $(LIBFT) -lft -pthread
+	$(CC) $(CFLAGS) $^ -o $(EXEC) -I $(INCLUDES) -pthread
 
 .c.o :
-	$(CC) $(CFLAGS) -L $(LIBFT) -c $^ -o $@ -I $(INCLUDES) -I $(LIBFT) -lft -pthread
+	$(CC) $(CFLAGS) -c $^ -o $@ -I $(INCLUDES) -pthread
 
 clean :
 	rm -rf $(OBJS)
-	make clean -C $(LIBFT)
-
+	
 fclean : clean
 	rm -rf $(EXEC)
-	make fclean -C $(LIBFT)
+	
 
 re : fclean all
 
