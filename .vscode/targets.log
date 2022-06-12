@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jun 11 11:07:13 2022
+# Make data base, printed on Sat Jun 11 16:06:15 2022
 
 # Variables
 
@@ -43,15 +43,13 @@ SHELL = /bin/sh
 # environment
 GDM_LANG = en
 # environment
-VTE_VERSION = 6003
-# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/bin/code
+_ = /usr/share/code/code
 # makefile (from 'Makefile', line 2)
 CFLAGS = -Wall -Wextra -Werror -g3 
 # environment
-JOURNAL_STREAM = 9:3341954923
+JOURNAL_STREAM = 9:3342071117
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -59,7 +57,7 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-IM_CONFIG_PHASE = 1
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -73,15 +71,15 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from 'Makefile', line 19)
 OBJS = ${SRCS:.c=.o}
 # environment
-MANAGERPID = 609365
+MANAGERPID = 647355
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-bbefa66b-e0f1-4f8c-9351-16f88abaa2b4.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-fb59da9b-b10a-4ff7-b8f0-a38b0dfa22b5.sock
 # environment
-VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
+VSCODE_CWD = /mnt/nfs/homes/nburat-d
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session13
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session15
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40568_iCb4R3
+KRB5CCNAME = FILE:/tmp/krb5cc_40568_wQGkXU
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -91,7 +89,7 @@ GPG_AGENT_INFO = /run/user/40568/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e3r7p21.clusters.42paris.fr:@/tmp/.ICE-unix/609870,unix/e3r7p21.clusters.42paris.fr:/tmp/.ICE-unix/609870
+SESSION_MANAGER = local/e3r7p21.clusters.42paris.fr:@/tmp/.ICE-unix/647848,unix/e3r7p21.clusters.42paris.fr:/tmp/.ICE-unix/647848
 # environment
 XDG_RUNTIME_DIR = /run/user/40568
 # environment
@@ -101,19 +99,19 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 9458a11fb2a4494eba61b9b57a147ecf
+INVOCATION_ID = 27953bcae7984995a353ee07ed794477
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
 XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/nburat-d
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = 
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40568/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 648993
 # automatic
 %F = $(notdir $%)
 # environment
@@ -125,7 +123,7 @@ PWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 609816
+SSH_AGENT_PID = 647812
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -134,8 +132,6 @@ GTK_MODULES = gail:atk-bridge
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /mnt/nfs/homes/nburat-d
-# environment
-VSCODE_CLI = 1
 # environment
 VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/nburat-d/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
@@ -152,8 +148,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 MAKELEVEL := 0
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -163,11 +157,13 @@ QT_IM_MODULE = ibus
 # makefile (from 'Makefile', line 10)
 SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/routine.c ./srcs/gettime.c ./srcs/init.c ./srcs/print_msg.c 
 # environment
-SHLVL = 1
+SHLVL = 0
 # makefile (from 'Makefile', line 6)
 LIBFT = ./libft/
 # makefile (from 'Makefile', line 1)
 CC = gcc
+# environment
+IM_CONFIG_PHASE = 1
 # makefile (from 'Makefile', line 4)
 EXEC = philo
 # default
@@ -187,7 +183,7 @@ LESS = -R
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /mnt/nfs/homes/nburat-d/Documents
+OLDPWD = /mnt/nfs/homes/nburat-d
 # default
 .VARIABLES := 
 # automatic
@@ -224,12 +220,8 @@ PAGER = less
 LC_ALL = C
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/0e160e5e_3ead_4091_add9_afbc69fc7b29
 # automatic
 ^F = $(notdir $^)
-# environment
-GNOME_TERMINAL_SERVICE = :1.134
 # default
 SUFFIXES := 
 # environment
@@ -243,13 +235,11 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
 DOCKER_HOST = unix:///run/user/40568/docker.sock
 # environment
-VSCODE_PID = 617707
+VSCODE_PID = 648993
 # variable set hash-table stats:
-# Load=119/1024=12%, Rehash=0, Collisions=12/152=8%
+# Load=114/1024=11%, Rehash=0, Collisions=9/147=6%
 
 # Pattern-specific Variable Values
 
@@ -289,8 +279,8 @@ MAKELIBFT:
 # ^ := 
 # automatic
 # ? := 
-# variable set hash-table stats:
  
+# variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
 #  recipe to execute (from 'Makefile', line 27):
 	make -C $(LIBFT)
@@ -430,6 +420,6 @@ srcs/check_args.o:
 # strcache performance: lookups = 57 / hit rate = 45%
 # hash-table stats:
 # Load=31/8192=0%, Rehash=0, Collisions=1/57=2%
-# Finished Make data base on Sat Jun 11 11:07:13 2022
+# Finished Make data base on Sat Jun 11 16:06:15 2022
 
  
