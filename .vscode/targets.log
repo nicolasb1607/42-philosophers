@@ -5,8 +5,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Sat Jun 11 16:06:15 2022
+# Make data base, printed on Sun Jun 12 09:41:30 2022
 
 # Variables
 
@@ -41,15 +42,15 @@ CURDIR := /mnt/nfs/homes/nburat-d/Documents/philosophers
 # makefile
 SHELL = /bin/sh
 # environment
-GDM_LANG = en
+VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/share/code/code
+_ = /usr/bin/code
 # makefile (from 'Makefile', line 2)
-CFLAGS = -Wall -Wextra -Werror -g3 
+CFLAGS = -Wall -Wextra -Werror -g3  
 # environment
-JOURNAL_STREAM = 9:3342071117
+JOURNAL_STREAM = 9:3373558
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -57,7 +58,7 @@ MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+IM_CONFIG_PHASE = 1
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -71,15 +72,15 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from 'Makefile', line 19)
 OBJS = ${SRCS:.c=.o}
 # environment
-MANAGERPID = 647355
+MANAGERPID = 826068
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-fb59da9b-b10a-4ff7-b8f0-a38b0dfa22b5.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-b735151c-bd97-456e-a1a3-09b2e70f50d2.sock
 # environment
-VSCODE_CWD = /mnt/nfs/homes/nburat-d
+VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session15
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session19
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40568_wQGkXU
+KRB5CCNAME = FILE:/tmp/krb5cc_40568_sFrOO7
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -89,7 +90,7 @@ GPG_AGENT_INFO = /run/user/40568/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e3r7p21.clusters.42paris.fr:@/tmp/.ICE-unix/647848,unix/e3r7p21.clusters.42paris.fr:/tmp/.ICE-unix/647848
+SESSION_MANAGER = local/e2r4p4.clusters.42paris.fr:@/tmp/.ICE-unix/826503,unix/e2r4p4.clusters.42paris.fr:/tmp/.ICE-unix/826503
 # environment
 XDG_RUNTIME_DIR = /run/user/40568
 # environment
@@ -99,19 +100,21 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 27953bcae7984995a353ee07ed794477
+INVOCATION_ID = b83b80a3e52247c5b88f9d79f35c7043
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
 XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/nburat-d
 # environment
-LS_COLORS = 
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40568/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 648993
+GIO_LAUNCHED_DESKTOP_FILE_PID = 826882
 # automatic
 %F = $(notdir $%)
 # environment
@@ -123,7 +126,7 @@ PWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 647812
+SSH_AGENT_PID = 826389
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -132,6 +135,8 @@ GTK_MODULES = gail:atk-bridge
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /mnt/nfs/homes/nburat-d
+# environment
+VSCODE_CLI = 1
 # environment
 VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/nburat-d/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
@@ -148,6 +153,8 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 MAKELEVEL := 0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -157,13 +164,13 @@ QT_IM_MODULE = ibus
 # makefile (from 'Makefile', line 10)
 SRCS = ./main.c ./srcs/check_args.c ./srcs/launch_prgm.c ./srcs/routine.c ./srcs/gettime.c ./srcs/init.c ./srcs/print_msg.c 
 # environment
-SHLVL = 0
+SHLVL = 1
 # makefile (from 'Makefile', line 6)
 LIBFT = ./libft/
 # makefile (from 'Makefile', line 1)
 CC = gcc
 # environment
-IM_CONFIG_PHASE = 1
+TERMINATOR_UUID = urn:uuid:3254923a-dd96-44b5-8edf-d2f1a7c74c16
 # makefile (from 'Makefile', line 4)
 EXEC = philo
 # default
@@ -183,13 +190,13 @@ LESS = -R
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /mnt/nfs/homes/nburat-d
+OLDPWD = /mnt/nfs/homes/nburat-d/Documents
+# environment
+TERMINATOR_DBUS_PATH = /net/tenshu/Terminator2
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
-# environment
-LANGUAGE = en
 # environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
@@ -218,8 +225,6 @@ MAKEFILES :=
 PAGER = less
 # environment
 LC_ALL = C
-# environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # automatic
 ^F = $(notdir $^)
 # default
@@ -228,18 +233,20 @@ SUFFIXES :=
 CHROME_DESKTOP = code-url-handler.desktop
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
-GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
 LANG = C
 # environment
+TERM = xterm-256color
+# environment
+TERMINATOR_DBUS_NAME = net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873
+# environment
 DOCKER_HOST = unix:///run/user/40568/docker.sock
 # environment
-VSCODE_PID = 648993
+VSCODE_PID = 826977
 # variable set hash-table stats:
-# Load=114/1024=11%, Rehash=0, Collisions=9/147=6%
+# Load=117/1024=11%, Rehash=0, Collisions=13/150=9%
 
 # Pattern-specific Variable Values
 
@@ -247,7 +254,7 @@ VSCODE_PID = 648993
 
 # Directories
 
-# . (device 58, inode 207782818): 13 files, no impossibilities.
+# . (device 60, inode 207782818): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
 
@@ -277,9 +284,9 @@ MAKELIBFT:
 # < := 
 # automatic
 # ^ := 
+ 
 # automatic
 # ? := 
- 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
 #  recipe to execute (from 'Makefile', line 27):
@@ -328,7 +335,7 @@ srcs/routine.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-11 11:07:10.722390707
+#  Last modified 2022-06-12 09:39:32.352103793
 #  File has been updated.
 #  Successfully updated.
 
@@ -420,6 +427,6 @@ srcs/check_args.o:
 # strcache performance: lookups = 57 / hit rate = 45%
 # hash-table stats:
 # Load=31/8192=0%, Rehash=0, Collisions=1/57=2%
-# Finished Make data base on Sat Jun 11 16:06:15 2022
+# Finished Make data base on Sun Jun 12 09:41:30 2022
 
  

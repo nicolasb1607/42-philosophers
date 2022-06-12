@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 11:10:33 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/10 17:12:44 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/12 09:34:38 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,14 @@ void	init_forks(t_global *global)
 
 void	set_fork_to_philo(t_philo *philo, t_global *global)
 {
+	if (philo->id % 2 == 0)
+	{
 	philo->left_fork =	philo->id % global->num_of_philo;
 	philo->right_fork = (philo->id + global->num_of_philo - 1) % global->num_of_philo;
+	}
+	else
+	{
+		philo->right_fork =	philo->id % global->num_of_philo;
+		philo->left_fork = (philo->id + global->num_of_philo - 1) % global->num_of_philo;
+	}
 }
