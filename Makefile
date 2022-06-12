@@ -18,7 +18,7 @@ SRCS	=	./main.c				\
 			./srcs/print_msg.c		\
 			./srcs/check_death.c	\
 			./srcs/ft_is_int.c		\
-			./srcs/ft_isdigit.c	\
+			./srcs/ft_isdigit.c		\
 			./srcs/ft_putstr_fd.c	\
 			./srcs/ft_atoi.c		\
 			./srcs/ft_strlen.c		\
