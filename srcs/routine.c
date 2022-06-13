@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/25 10:37:31 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/13 14:17:33 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/13 14:25:36 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,8 +82,8 @@ void	*routine(void *arg)
 		if (sleeping_routine(&philo) == 1)
 			return (NULL);
 		print_thinking(&philo);
-		if (philo.global->num_of_philo == 3)
-			ft_usleep_bis(100, &philo);
+		if (philo.global->num_of_philo % 2 != 0)
+			ft_usleep_bis(philo.global->time_to_sleep, &philo);
 		else
 			ft_usleep_bis(3, &philo);
 	}
