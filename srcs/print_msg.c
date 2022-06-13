@@ -6,7 +6,7 @@
 /*   By: nburat-d <nburat-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 10:55:01 by nburat-d          #+#    #+#             */
-/*   Updated: 2022/06/12 10:03:48 by nburat-d         ###   ########.fr       */
+/*   Updated: 2022/06/12 13:33:06 by nburat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	print_take_fork(t_philo *philo)
 {	
 	pthread_mutex_lock(&philo->global->printf);
 	if (philo->global->stop == 0)
-		printf("[%ld] %d has taken a fork\n",
+		printf("%ld %d has taken a fork\n",
 			philo->current_time - philo->global->start, philo->id);
 	pthread_mutex_unlock(&philo->global->printf);
 }
@@ -25,7 +25,7 @@ void	print_eating(t_philo *philo)
 {
 	pthread_mutex_lock(&philo->global->printf);
 	if (philo->global->stop == 0)
-		printf("[%ld] %d is eating\n",
+		printf("%ld %d is eating\n",
 			philo->current_time - philo->global->start, philo->id);
 	pthread_mutex_unlock(&philo->global->printf);
 	philo->meal_taken = philo->meal_taken + 1;
@@ -35,7 +35,7 @@ void	print_sleeping(t_philo *philo)
 {
 	pthread_mutex_lock(&philo->global->printf);
 	if (philo->global->stop == 0)
-		printf("[%ld] %d is sleeping\n",
+		printf("%ld %d is sleeping\n",
 			philo->current_time - philo->global->start, philo->id);
 	pthread_mutex_unlock(&philo->global->printf);
 }
@@ -44,7 +44,7 @@ void	print_thinking(t_philo *philo)
 {
 	pthread_mutex_lock(&philo->global->printf);
 	if (philo->global->stop == 0)
-		printf("[%ld] %d is thinking\n",
+		printf("%ld %d is thinking\n",
 			philo->current_time - philo->global->start, philo->id);
 	pthread_mutex_unlock(&philo->global->printf);
 }
@@ -54,7 +54,7 @@ void	print_dead(t_philo *philo)
 	pthread_mutex_lock(&philo->global->printf);
 	if (philo->global->stop == 0)
 	{
-		printf("[%ld] %d died\n",
+		printf("%ld %d died\n",
 			philo->current_time - philo->global->start, philo->id);
 		pthread_mutex_lock(&philo->global->mutex_stop);
 		philo->global->stop = 1;

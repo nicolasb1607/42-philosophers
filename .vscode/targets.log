@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 12 11:39:31 2022
+# Make data base, printed on Mon Jun 13 13:46:21 2022
 
 # Variables
 
@@ -41,6 +41,8 @@ CURDIR := /mnt/nfs/homes/nburat-d/Documents/philosophers
 # makefile
 SHELL = /bin/sh
 # environment
+GDM_LANG = en
+# environment
 VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
@@ -49,7 +51,7 @@ _ = /usr/bin/code
 # makefile (from 'Makefile', line 2)
 CFLAGS = -Wall -Wextra -Werror 
 # environment
-JOURNAL_STREAM = 9:3373558
+JOURNAL_STREAM = 9:2995245
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -71,15 +73,15 @@ VSCODE_VERBOSE_LOGGING = true
 # makefile (from 'Makefile', line 30)
 OBJS = ${SRCS:.c=.o}
 # environment
-MANAGERPID = 826068
+MANAGERPID = 717642
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-01ea3ddd-033b-4bd5-8e0a-322a19d2222e.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/40568/vscode-ipc-f3fb639b-d569-4efa-ade8-ddc90892dce4.sock
 # environment
 VSCODE_CWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session19
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session9
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_40568_sFrOO7
+KRB5CCNAME = FILE:/tmp/krb5cc_40568_OpTkJu
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -89,7 +91,7 @@ GPG_AGENT_INFO = /run/user/40568/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/e2r4p4.clusters.42paris.fr:@/tmp/.ICE-unix/826503,unix/e2r4p4.clusters.42paris.fr:/tmp/.ICE-unix/826503
+SESSION_MANAGER = local/e3r3p12.clusters.42paris.fr:@/tmp/.ICE-unix/718143,unix/e3r3p12.clusters.42paris.fr:/tmp/.ICE-unix/718143
 # environment
 XDG_RUNTIME_DIR = /run/user/40568
 # environment
@@ -99,7 +101,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = b83b80a3e52247c5b88f9d79f35c7043
+INVOCATION_ID = 87c102598e004a81b4bde51d7c40eae7
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -113,7 +115,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/40568/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 826882
+GIO_LAUNCHED_DESKTOP_FILE_PID = 764535
 # automatic
 %F = $(notdir $%)
 # environment
@@ -125,7 +127,7 @@ PWD = /mnt/nfs/homes/nburat-d/Documents/philosophers
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 826389
+SSH_AGENT_PID = 718107
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -141,7 +143,7 @@ VSCODE_CODE_CACHE_PATH = /mnt/nfs/homes/nburat-d/.config/Code/CachedData/c3511e6
 # environment
 LOGNAME = nburat-d
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 ZSH = /mnt/nfs/homes/nburat-d/.oh-my-zsh
 # environment
@@ -169,7 +171,7 @@ LIBFT = ./libft/
 # makefile (from 'Makefile', line 1)
 CC = gcc
 # environment
-TERMINATOR_UUID = urn:uuid:3254923a-dd96-44b5-8edf-d2f1a7c74c16
+TERMINATOR_UUID = urn:uuid:cf72607f-40ec-4dac-8bf3-3e465d91cc58
 # makefile (from 'Makefile', line 4)
 EXEC = philo
 # default
@@ -197,6 +199,8 @@ TERMINATOR_DBUS_PATH = /net/tenshu/Terminator2
 # automatic
 *F = $(notdir $*)
 # environment
+LANGUAGE = en
+# environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
 VSCODE_IPC_HOOK = /run/user/40568/vscode-2ba08e64-1.67.2-main.sock
@@ -212,6 +216,8 @@ MFLAGS = -pqrR
 GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
+# environment
+NO_AT_BRIDGE = 1
 # environment
 QT_ACCESSIBILITY = 1
 # environment
@@ -243,9 +249,9 @@ TERMINATOR_DBUS_NAME = net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873
 # environment
 DOCKER_HOST = unix:///run/user/40568/docker.sock
 # environment
-VSCODE_PID = 876504
+VSCODE_PID = 764920
 # variable set hash-table stats:
-# Load=117/1024=11%, Rehash=0, Collisions=13/146=9%
+# Load=120/1024=12%, Rehash=0, Collisions=13/149=9%
 
 # Pattern-specific Variable Values
 
@@ -253,7 +259,7 @@ VSCODE_PID = 876504
 
 # Directories
 
-# . (device 60, inode 207782818): 12 files, no impossibilities.
+# . (device 56, inode 207782818): 12 files, no impossibilities.
 
 # 12 files, no impossibilities in 1 directories.
 
@@ -266,10 +272,11 @@ VSCODE_PID = 876504
 # Not a target:
 srcs/free_prgm.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.222269998
+#  Last modified 2022-06-13 13:41:22.060936796
 #  File has been updated.
 #  Successfully updated.
 
+ 
 all: philo
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
@@ -277,18 +284,17 @@ all: philo
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
- 
 
 # Not a target:
 srcs/ft_memcpy.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.650269922
+#  Last modified 2022-06-13 13:41:22.57293663
 #  File has been updated.
 #  Successfully updated.
 
 philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/free_prgm.o srcs/routine.o srcs/gettime.o srcs/init_global.o srcs/init_philo.o srcs/print_msg.o srcs/check_death.o srcs/ft_is_int.o srcs/ft_isdigit.o srcs/ft_putstr_fd.o srcs/ft_atoi.o srcs/ft_strlen.o srcs/ft_memcpy.o srcs/ft_strcmp.o srcs/ft_putchar_fd.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-12 11:39:19.770269901
+#  Last modified 2022-06-13 13:41:22.808936553
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 38):
@@ -297,14 +303,14 @@ philo: main.o srcs/check_args.o srcs/launch_prgm.o srcs/free_prgm.o srcs/routine
 # Not a target:
 srcs/gettime.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.298269984
+#  Last modified 2022-06-13 13:41:22.168936761
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/ft_strlen.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.622269927
+#  Last modified 2022-06-13 13:41:22.540936641
 #  File has been updated.
 #  Successfully updated.
 
@@ -316,28 +322,28 @@ srcs/ft_strlen.o:
 # Not a target:
 srcs/ft_isdigit.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.518269945
+#  Last modified 2022-06-13 13:41:22.428936677
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/routine.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.262269991
+#  Last modified 2022-06-13 13:41:22.100936783
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:38:46.886277583
+#  Last modified 2022-06-12 11:41:56.010239826
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/ft_is_int.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.482269952
+#  Last modified 2022-06-13 13:41:22.392936688
 #  File has been updated.
 #  Successfully updated.
 
@@ -351,7 +357,7 @@ MAKEPRINTF:
 # Not a target:
 srcs/init_philo.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.370269971
+#  Last modified 2022-06-13 13:41:22.268936729
 #  File has been updated.
 #  Successfully updated.
 
@@ -380,7 +386,7 @@ fclean: clean
 # Not a target:
 srcs/print_msg.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.406269965
+#  Last modified 2022-06-13 13:41:22.312936714
 #  File has been updated.
 #  Successfully updated.
 
@@ -402,63 +408,63 @@ clean:
 # Not a target:
 srcs/check_death.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.442269959
+#  Last modified 2022-06-13 13:41:22.352936701
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/ft_strcmp.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.686269915
+#  Last modified 2022-06-13 13:41:22.608936618
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 main.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.110270018
+#  Last modified 2022-06-13 13:41:21.936936836
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/launch_prgm.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.186270004
+#  Last modified 2022-06-13 13:41:22.020936809
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/ft_putstr_fd.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.554269939
+#  Last modified 2022-06-13 13:41:22.464936665
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/init_global.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.334269978
+#  Last modified 2022-06-13 13:41:22.208936748
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/ft_putchar_fd.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.71826991
+#  Last modified 2022-06-13 13:41:22.644936606
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/ft_atoi.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.586269933
+#  Last modified 2022-06-13 13:41:22.500936653
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 srcs/check_args.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-12 11:39:19.15427001
+#  Last modified 2022-06-13 13:41:21.976936824
 #  File has been updated.
 #  Successfully updated.
 
@@ -476,6 +482,6 @@ srcs/check_args.o:
 # strcache performance: lookups = 63 / hit rate = 36%
 # hash-table stats:
 # Load=40/8192=0%, Rehash=0, Collisions=1/63=2%
-# Finished Make data base on Sun Jun 12 11:39:31 2022
+# Finished Make data base on Mon Jun 13 13:46:21 2022
 
  

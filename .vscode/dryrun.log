@@ -1,5 +1,23 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/mnt/nfs/homes/nburat-d/Documents/philosophers'
-make: Nothing to be done for 'all'.
+gcc -Wall -Wextra -Werror  -c main.c -o main.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/check_args.c -o srcs/check_args.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/launch_prgm.c -o srcs/launch_prgm.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/free_prgm.c -o srcs/free_prgm.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/routine.c -o srcs/routine.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/gettime.c -o srcs/gettime.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/init_global.c -o srcs/init_global.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/init_philo.c -o srcs/init_philo.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/print_msg.c -o srcs/print_msg.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/check_death.c -o srcs/check_death.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/ft_is_int.c -o srcs/ft_is_int.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/ft_isdigit.c -o srcs/ft_isdigit.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/ft_putstr_fd.c -o srcs/ft_putstr_fd.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/ft_atoi.c -o srcs/ft_atoi.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/ft_strlen.c -o srcs/ft_strlen.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/ft_memcpy.c -o srcs/ft_memcpy.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/ft_strcmp.c -o srcs/ft_strcmp.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  -c srcs/ft_putchar_fd.c -o srcs/ft_putchar_fd.o -I ./includes/ -pthread
+gcc -Wall -Wextra -Werror  main.o srcs/check_args.o srcs/launch_prgm.o srcs/free_prgm.o srcs/routine.o srcs/gettime.o srcs/init_global.o srcs/init_philo.o srcs/print_msg.o srcs/check_death.o srcs/ft_is_int.o srcs/ft_isdigit.o srcs/ft_putstr_fd.o srcs/ft_atoi.o srcs/ft_strlen.o srcs/ft_memcpy.o srcs/ft_strcmp.o srcs/ft_putchar_fd.o -o philo -I ./includes/ -pthread
 make: Leaving directory '/mnt/nfs/homes/nburat-d/Documents/philosophers'
  
