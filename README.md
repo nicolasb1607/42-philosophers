@@ -2,17 +2,21 @@
 
 ## Introduction
 
-Philosophy (from Greek, philosophia, literally "love of wisdom") is the study of general and fundamental questions about existence, knowledge, values, reason, mind, and language. Such questions are often posed as problems to be studied or resolved. The term was probably coined by Pythagoras (c. 570 – 495 BCE). Philosophical methods include questioning, critical discussion, rational argument, and systematic presentation.
+In this project, you will dive into the fascinating world of dining philosophers. Imagine a scenario where one or more philosophers sit at a round table with a large bowl of spaghetti placed in the middle. These philosophers have a unique set of rules governing their actions:
 
-Classic philosophical questions include: Is it possible to know anything and to prove it? What is most real? Philosophers also pose more practical and concrete questions such as: Is there a best way to live? Is it better to be just or unjust (if one can get away with it)? Do humans have free will?
+- The philosophers take turns either eating, thinking, or sleeping.
+- While a philosopher is eating, they cannot think or sleep.
+- While thinking, they cannot eat or sleep.
+- And, naturally, while sleeping, they cannot eat or think.
 
-Historically, "philosophy" encompassed any body of knowledge. From the time of Ancient Greek philosopher Aristotle to the 19th century, "natural philosophy" encompassed astronomy, medicine, and physics. For example, Newton’s 1687 Mathematical Principles of Natural Philosophy later became classified as a book of physics.
+To facilitate their dining experience, there are as many forks on the table as there are philosophers. Dining with only one fork would be quite inconvenient, so each philosopher takes both their right and left forks, one in each hand, to eat.
 
-In the 19th century, the growth of modern research universities led academic philosophy and other disciplines to professionalize and specialize. In the modern era, some investigations that were traditionally part of philosophy became separate academic disciplines, including psychology, sociology, linguistics, and economics.
+Once a philosopher finishes their meal, they place their forks back on the table and begin sleeping. Upon waking up, they resume thinking. The simulation continues until, unfortunately, a philosopher succumbs to starvation.
 
-Other investigations closely related to art, science, politics, or other pursuits remained part of philosophy. For example, is beauty objective or subjective? Are there many scientific methods or just one? Is political utopia a hopeful dream or hopeless fantasy?
+The primary objective of this assignment is to ensure that every philosopher gets a fair chance to eat and, most importantly, never starves. It's worth noting that these philosophers do not communicate with each other, and they remain oblivious to the imminent demise of their fellow philosophers.
 
-Major sub-fields of academic philosophy include metaphysics ("concerned with the fundamental nature of reality and being"), epistemology (about the "nature and grounds of knowledge [and]... its limits and validity"), ethics, aesthetics, political philosophy, logic and philosophy of science.
+Your task is to design a solution that ensures the philosophers' survival by avoiding starvation. Philosophers should be able to peacefully coexist at the dining table, engaging in their cyclic activities without risking their lives.
+
 
 ## Common Instructions
 
